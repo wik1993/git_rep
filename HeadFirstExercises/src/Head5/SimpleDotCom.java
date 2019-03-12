@@ -1,31 +1,30 @@
 package Head5;
 
+import java.util.ArrayList;
+
 /**
  * Created by Family on 20.10.2016.
  */
 public class SimpleDotCom {
 
-    int [] locationCells;
-    int numOfHits = 0;
+    private ArrayList<String> locationCells;
 
-    public void setLocationCells(int[] locs){
+    public void setLocationCells(ArrayList<String> locs) {
         locationCells = locs;
     }
 
-    public String checkYourself(String stringGuess){
-        int guess = Integer.parseInt(stringGuess);
-        String result = "Mimo";
-        for (int cell : locationCells){
-            if(guess == cell){
-                result = "Popal";
-                numOfHits++;
-                break;
+    public String checkYourself(String useInput) {
+        String result = "Miss";
+        int index = locationCells.indexOf(useInput);
+            if (index >= 0) {
+                locationCells.remove(index);
+
+                if (locationCells.isEmpty()) {
+                    result = "kill";
+                } else {
+                    result = "hit";
+                }
             }
-        }
-        if(numOfHits == locationCells.length){
-            result = "Potopil";
-        }
-        System.out.println(result);
         return result;
     }
 }
