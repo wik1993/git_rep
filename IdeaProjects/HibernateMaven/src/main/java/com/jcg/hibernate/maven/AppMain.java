@@ -30,13 +30,13 @@ public class AppMain {
          AM.listChildren();
 
         /* Update child's records */
-         AM.updateChild(4,33);
+        // AM.updateChild(4,33);
 
         //Delete an child from the database */
-         AM.deleteChild(6);
+         //AM.deleteChild(6);
 
         /* List down new list of the children */
-        AM.listChildren();
+       // AM.listChildren();
     }
 
     /* Method to CREATE an child in the database */
@@ -95,7 +95,6 @@ public class AppMain {
     public void deleteChild(Integer ChildID) {
         Session session = factory.openSession();
         Transaction tx = null;
-
         try {
             tx = session.beginTransaction();
             Child child = session.get(Child.class, ChildID);
