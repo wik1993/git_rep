@@ -4,9 +4,10 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
-import java.util.HashSet;
+
+
 import java.util.List;
-import java.util.Set;
+
 
 public class Main {
     private static SessionFactory factory;
@@ -20,26 +21,14 @@ public class Main {
         }
 
         Main main = new Main();
-        main.listUniversities();
-    /*    Session session = factory.openSession();
-        Transaction tx = session.beginTransaction();
-        List<Professor> professors = (List<Professor>) session.createQuery(
-                "from Professor ").list();
-        for (Professor s : professors) {
-            System.out.println("Student Details : " + s);
-            System.out.println("Student University Details: "
-                    + s.getUniversity());
-        }
-        tx.commit();
-        session.close();*/
+        //main.listUniversities();
+        //main.listProfessors();
     }
-
     /* Method to ADD an university in the database */
     public Integer addUniversity(int id, String name, String shortName) {
         Session session = factory.openSession();
         Transaction tx;
         Integer universityID;
-
         tx = session.beginTransaction();
         University university = new University();
         university.setId(id);
@@ -57,11 +46,20 @@ public class Main {
         tx = session.beginTransaction();
         List universities = session.createQuery("FROM University").list();
         for (Object univ : universities) {
-            University university = (University) univ;
-            System.out.println("ID: " + university.getId());
-            System.out.print(" University Name: " + university.getName());
-            System.out.print(" University Short-Name: " + university.getShortName());
-            System.out.println(" ");
+            System.out.println(univ.toString());
+        }
+        tx.commit();
+        session.close();
+    }
+
+    public void listProfessors() {
+        Session session = factory.openSession();
+        Transaction tx;
+        tx = session.beginTransaction();
+        List professors = session.createQuery("FROM Professor").list();
+        for (Object prof : professors) {
+            Professor professor = (Professor) prof;
+            System.out.println(professor.toString());
         }
         tx.commit();
         session.close();

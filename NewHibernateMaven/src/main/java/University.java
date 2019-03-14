@@ -1,5 +1,6 @@
 import javax.persistence.*;
 
+
 @Entity
 @Table(name = "university")
 public class University {
@@ -35,4 +36,12 @@ public class University {
         this.shortName = shortName;
     }
 
+    @Override
+    public String toString() {
+        return "University{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", shortName='" + shortName + '\'' +
+                '}';
+    }
 }

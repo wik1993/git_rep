@@ -1,11 +1,11 @@
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
 @Table(name = "professors")
 public class Professor {
     @Id
-    @GeneratedValue
     @Column(name = "id")
     private int id;
     @Column(name = "first_name")
@@ -14,14 +14,16 @@ public class Professor {
     private String lastName;
 
 
-    @OneToMany(mappedBy = "professors", cascade = CascadeType.ALL)
-    private List<University> university;
+    @ManyToOne
+    @JoinColumn(name = "university_id")
+    private University university;
 
-    public List<University> getUniversity() {
+
+    public University getUniversity() {
         return university;
     }
 
-    public void setUniversity(List<University> university) {
+    public void setUniversity(University university) {
         this.university = university;
     }
 

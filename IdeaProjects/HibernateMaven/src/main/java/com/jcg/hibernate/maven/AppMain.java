@@ -6,6 +6,7 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
+import java.util.Iterator;
 import java.util.List;
 
 public class AppMain {
@@ -72,7 +73,7 @@ public class AppMain {
         session.close();
     }
 
-    /* Method to UPDATE salary for an child */
+    /* Method to UPDATE age for an child */
     public void updateChild(Integer ChildID, int age) {
         Session session = factory.openSession();
         Transaction tx = null;
