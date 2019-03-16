@@ -3,27 +3,27 @@ import java.util.List;
 
 
 @Entity
-@Table(name = "university")
-public class University {
-
+@Table(name = "subjects")
+public class Subject {
     @Id
     @Column(name = "id")
     private int id;
     @Column(name = "name")
     private String name;
-    @Column(name = "short_name")
-    private String shortName;
+    @Column(name = "number_hour")
+    private int numberHour;
 
-    @OneToMany(mappedBy = "university")
+    @ManyToMany(mappedBy = "subjects")
     private List<Professor> professors;
 
-    public University() {}
+    public Subject() {}
 
-    public University(int id, String name, String shortName) {
+    public Subject(int id, String name, int numberHour) {
         this.id = id;
         this.name = name;
-        this.shortName = shortName;
+        this.numberHour = numberHour;
     }
+
 
     public List<Professor> getProfessors() {
         return professors;
@@ -32,6 +32,8 @@ public class University {
     public void setProfessors(List<Professor> professors) {
         this.professors = professors;
     }
+
+
 
     public int getId() {
         return id;
@@ -49,20 +51,20 @@ public class University {
         this.name = name;
     }
 
-    public String getShortName() {
-        return shortName;
+    public int getNumberHour() {
+        return numberHour;
     }
 
-    public void setShortName(String shortName) {
-        this.shortName = shortName;
+    public void setNumberHour(int numbeHour) {
+        this.numberHour = numberHour;
     }
 
-    @Override
+   @Override
     public String toString() {
-        return "University{" +
+        return "Subject{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", shortName='" + shortName + '\'' +
+                ", numberHour=" + numberHour +
                 '}';
     }
 }

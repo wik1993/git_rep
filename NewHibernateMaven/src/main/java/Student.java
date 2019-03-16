@@ -1,11 +1,9 @@
 import javax.persistence.*;
 import java.util.List;
 
-
 @Entity
-@Table(name = "professors")
-public class Professor {
-
+@Table(name = "students")
+public class Student {
     @Id
     @Column(name = "id")
     private int id;
@@ -14,26 +12,18 @@ public class Professor {
     @Column(name = "last_name")
     private String lastName;
 
-    @ManyToMany(cascade = { CascadeType.ALL })
-    @JoinTable(
-            name = "prof_subject",
-            joinColumns = { @JoinColumn(name = "professor_id") },
-            inverseJoinColumns = { @JoinColumn(name = "subject_id") }
-    )
-    private List<Subject> subjects;
-
     @ManyToOne
-    @JoinColumn(name = "university_id")
-    private University university;
+    @JoinColumn(name = "subject_id")
+    private Subject subject;
 
+    public  Student (){}
 
-    public University getUniversity() {
-        return university;
+    public Student(int id, String firstName, String lastName) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
     }
 
-    public void setUniversity(University university) {
-        this.university = university;
-    }
 
     public int getId() {
         return id;
@@ -58,14 +48,21 @@ public class Professor {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
+
+    public Subject getSubject() {
+        return subject;
+    }
+
+    public void setSubject(Subject subject) {
+        this.subject = subject;
+    }
+
     @Override
     public String toString() {
-        return "Professor{" +
+        return "Student{" +
                 "id=" + id +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
-                ", subjects=" +  subjects +
-                ", university=" + university.getName() +
                 '}';
     }
 }

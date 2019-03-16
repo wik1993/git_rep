@@ -1,12 +1,9 @@
-import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
 
-
-import java.util.List;
 
 
 public class Main {
@@ -19,49 +16,57 @@ public class Main {
             System.err.println("Failed to create sessionFactory object." + ex);
             throw new ExceptionInInitializerError(ex);
         }
-
         Main main = new Main();
-        //main.listUniversities();
-        //main.listProfessors();
-    }
-    /* Method to ADD an university in the database */
-    public Integer addUniversity(int id, String name, String shortName) {
-        Session session = factory.openSession();
-        Transaction tx;
-        Integer universityID;
-        tx = session.beginTransaction();
-        University university = new University();
-        university.setId(id);
-        university.setName(name);
-        university.setShortName(shortName);
-        universityID = (Integer) session.save(university);
-        tx.commit();
-        session.close();
-        return universityID;
+        /*University university = new University();
+        university.setId(3);
+        university.setName("Pula Belita");
+        university.setShortName("PB");*/
+        //main.save(university);
+        //main.read(3, University.class);
+        main.update(1, University.class);
+        //main.delete(3, University.class);
     }
 
-    public void listUniversities() {
+    /* Method to SAVE in the database */
+    public Integer save(Object obj) {
         Session session = factory.openSession();
         Transaction tx;
+        Integer objID;
         tx = session.beginTransaction();
-        List universities = session.createQuery("FROM University").list();
-        for (Object univ : universities) {
-            System.out.println(univ.toString());
-        }
+        objID = (Integer) session.save(obj);
+        tx.commit();
+        session.close();
+        return objID;
+    }
+
+    /* Method to Read's by ID and Object type in the database */
+    public void read(Integer id, Class<?> objectType) {
+        Session session = factory.openSession();
+        Object result = session.get(objectType, id);
+        System.out.println(result.toString());
+        session.close();
+    }
+
+
+    public void update(Integer id, Class <?> obj) {
+        Session session = factory.openSession();
+        Transaction tx = null;
+        tx = session.beginTransaction();
+        Object object =session.get(obj, id);
+
+        session.update(object);
         tx.commit();
         session.close();
     }
 
-    public void listProfessors() {
+    public void delete(Integer id, Class<?> objectType) {
         Session session = factory.openSession();
-        Transaction tx;
+        Transaction tx = null;
         tx = session.beginTransaction();
-        List professors = session.createQuery("FROM Professor").list();
-        for (Object prof : professors) {
-            Professor professor = (Professor) prof;
-            System.out.println(professor.toString());
-        }
+        Object object = session.get(objectType, id);
+        session.delete(object);
         tx.commit();
         session.close();
     }
+
 }
