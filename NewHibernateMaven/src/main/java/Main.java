@@ -17,26 +17,25 @@ public class Main {
             throw new ExceptionInInitializerError(ex);
         }
         Main main = new Main();
-        /*University university = new University();
+        University university = new University();
         university.setId(3);
-        university.setName("Pula Belita");
-        university.setShortName("PB");*/
+        university.setName("Lazy University");
+        university.setShortName("LU");
         //main.save(university);
-        //main.read(3, University.class);
-        main.update(1, University.class);
-        //main.delete(3, University.class);
+        //main.read(1, University.class);
+        //main.update(university);
+        //main.delete(0, University.class);
     }
 
     /* Method to SAVE in the database */
-    public Integer save(Object obj) {
+    public void save(Object obj) {
         Session session = factory.openSession();
         Transaction tx;
-        Integer objID;
         tx = session.beginTransaction();
-        objID = (Integer) session.save(obj);
+        session.save(obj);
         tx.commit();
         session.close();
-        return objID;
+
     }
 
     /* Method to Read's by ID and Object type in the database */
@@ -48,15 +47,14 @@ public class Main {
     }
 
 
-    public void update(Integer id, Class <?> obj) {
+    public void update(Object object) {
         Session session = factory.openSession();
         Transaction tx = null;
         tx = session.beginTransaction();
-        Object object =session.get(obj, id);
-
         session.update(object);
         tx.commit();
         session.close();
+
     }
 
     public void delete(Integer id, Class<?> objectType) {
