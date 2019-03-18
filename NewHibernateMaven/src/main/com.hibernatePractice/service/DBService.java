@@ -7,6 +7,8 @@ import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
 
+import javax.persistence.Query;
+import javax.persistence.criteria.CriteriaQuery;
 import java.util.List;
 
 
@@ -28,16 +30,9 @@ public class DBService {
 
     /* Method to Read's by ID and Object type in the database */
 
-    public void read(Criteria criteria) {
-        List result = criteria.list();
-        result.forEach(System.out::println);
-    }
-
-       public void read(Integer id, Class<?> objectType) {
-        Session session = getSessionFactory().openSession();
-        Object result = session.get(objectType, id);
-        System.out.println(result.toString());
-        session.close();
+    public void read(Query query) {
+        List results = query.getResultList();
+        results.forEach(x -> System.out.println(results));
     }
 
 
