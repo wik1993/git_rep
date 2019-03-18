@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a29b0c3-8354-41ed-b121-d6956e2e6605" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/../../NewHibernateMaven/.idea/uiDesigner.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../NewHibernateMaven/src/main/com.hibernatePractice/service/DBService.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../NewHibernateMaven/src/main/com.hibernatePractice/test/Main.java" afterDir="false" />
@@ -23,6 +24,17 @@
       <change beforePath="$PROJECT_DIR$/../../NewHibernateMaven/target/classes/Subject.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../NewHibernateMaven/target/classes/University.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../NewHibernateMaven/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../NewHibernateMaven/target/classes/hibernate.cfg.xml" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/../../DataBase/training2.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../DataBase/training2.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../NewHibernateMaven/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../NewHibernateMaven/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../NewHibernateMaven/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../NewHibernateMaven/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../NewHibernateMaven/NewHibernateMaven.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../NewHibernateMaven/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../NewHibernateMaven/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../NewHibernateMaven/target/classes/META-INF/NewHibernateMaven.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../NewHibernateMaven/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../NewHibernateMaven/target/classes/Main.class" afterDir="false" />
+>>>>>>> 3c9bc26d61c0df268cede7405f5dc54b11cebfbe
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -37,8 +49,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jcg/hibernate/maven/AppMain.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="765">
               <caret line="45" column="24" lean-forward="true" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
+=======
+            <state relative-caret-position="119">
+              <caret line="69" column="9" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
+>>>>>>> 3c9bc26d61c0df268cede7405f5dc54b11cebfbe
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -127,7 +144,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="85" />
     <option name="y" value="25" />
     <option name="width" value="1750" />
@@ -139,6 +156,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -183,6 +201,16 @@
   <component name="PropertiesComponent">
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552748387107" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Java" />
+=======
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552748382946" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+>>>>>>> 3c9bc26d61c0df268cede7405f5dc54b11cebfbe
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -246,9 +274,17 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21331316" />
+=======
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Learn" weight="0.3295302" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19194631" />
+>>>>>>> 3c9bc26d61c0df268cede7405f5dc54b11cebfbe
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -419,8 +455,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jcg/hibernate/maven/AppMain.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="765">
           <caret line="45" column="24" lean-forward="true" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
+=======
+        <state relative-caret-position="119">
+          <caret line="69" column="9" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
+>>>>>>> 3c9bc26d61c0df268cede7405f5dc54b11cebfbe
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
