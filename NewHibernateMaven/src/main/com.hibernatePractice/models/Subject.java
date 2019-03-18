@@ -1,3 +1,5 @@
+package models;
+
 import javax.persistence.*;
 import java.util.List;
 
@@ -61,7 +63,7 @@ public class Subject {
 
    @Override
     public String toString() {
-        return "Subject{" +
+        return "models.Subject{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", numberHour=" + numberHour +

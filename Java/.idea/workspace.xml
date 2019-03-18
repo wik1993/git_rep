@@ -2,23 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f66d24a-da56-4b21-b0d1-a8efc1bb395b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../NewHibernateMaven/src/main/java/Mark.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NewHibernateMaven/src/main/java/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NewHibernateMaven/src/main/java/Subject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NewHibernateMaven/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NewHibernateMaven/src/main/com.hibernatePractice/DBService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NewHibernateMaven/src/main/com.hibernatePractice/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../IdeaProjects/HibernateMaven/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../IdeaProjects/HibernateMaven/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../IdeaProjects/HibernateMaven/src/main/java/com/jcg/hibernate/maven/AppMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/../IdeaProjects/HibernateMaven/src/main/java/com/jcg/hibernate/maven/AppMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../NewHibernateMaven/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../NewHibernateMaven/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../NewHibernateMaven/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../NewHibernateMaven/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NewHibernateMaven/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../NewHibernateMaven/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NewHibernateMaven/src/main/java/Professor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../NewHibernateMaven/src/main/java/Professor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NewHibernateMaven/src/main/java/University.java" beforeDir="false" afterPath="$PROJECT_DIR$/../NewHibernateMaven/src/main/java/University.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NewHibernateMaven/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../NewHibernateMaven/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NewHibernateMaven/src/main/java/Mark.java" beforeDir="false" afterPath="$PROJECT_DIR$/../NewHibernateMaven/src/main/com.hibernatePractice/Mark.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NewHibernateMaven/src/main/java/Professor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../NewHibernateMaven/src/main/com.hibernatePractice/Professor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NewHibernateMaven/src/main/java/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../NewHibernateMaven/src/main/com.hibernatePractice/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NewHibernateMaven/src/main/java/Subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/../NewHibernateMaven/src/main/com.hibernatePractice/Subject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NewHibernateMaven/src/main/java/University.java" beforeDir="false" afterPath="$PROJECT_DIR$/../NewHibernateMaven/src/main/com.hibernatePractice/University.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NewHibernateMaven/src/main/java/dbService.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../NewHibernateMaven/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../NewHibernateMaven/target/classes/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../NewHibernateMaven/target/classes/Professor.class" beforeDir="false" afterPath="$PROJECT_DIR$/../NewHibernateMaven/target/classes/Professor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NewHibernateMaven/target/classes/University.class" beforeDir="false" afterPath="$PROJECT_DIR$/../NewHibernateMaven/target/classes/University.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NewHibernateMaven/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../NewHibernateMaven/target/classes/hibernate.cfg.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,7 +53,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AgendaTraining/WorkWithAgenda.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
+            <state relative-caret-position="1785">
               <caret line="111" column="9" selection-start-line="111" selection-start-column="9" selection-end-line="111" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -134,7 +131,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -158,6 +154,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -278,7 +275,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49898168" visible="true" weight="0.16111952" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49898168" visible="true" weight="0.1633888" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -458,23 +455,15 @@
     </entry>
     <entry file="jrt://C:/Program Files/Java/jdk-11.0.1!/java.sql/java/sql/Connection.class" />
     <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.sql/java/sql/Connection.java" />
-    <entry file="file://$PROJECT_DIR$/src/AgendaTraining/service/AgendaBean.java">
+    <entry file="file://$PROJECT_DIR$/src/AgendaTraining/model/Agenda.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-          <folding>
-            <element signature="e#224#225#0" expanded="true" />
-            <element signature="e#253#254#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AgendaTraining/WorkWithAgenda.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="111" column="9" selection-start-line="111" selection-start-column="9" selection-end-line="111" selection-end-column="9" />
+        <state relative-caret-position="255">
+          <caret line="17" column="46" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#203#204#0" expanded="true" />
+            <element signature="e#252#253#0" expanded="true" />
+            <element signature="e#415#416#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -486,15 +475,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AgendaTraining/model/Agenda.java">
+    <entry file="file://$PROJECT_DIR$/src/AgendaTraining/WorkWithAgenda.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="46" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
+        <state relative-caret-position="1785">
+          <caret line="111" column="9" selection-start-line="111" selection-start-column="9" selection-end-line="111" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#203#204#0" expanded="true" />
-            <element signature="e#252#253#0" expanded="true" />
-            <element signature="e#415#416#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AgendaTraining/service/AgendaBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+          <folding>
+            <element signature="e#224#225#0" expanded="true" />
+            <element signature="e#253#254#0" expanded="true" />
           </folding>
         </state>
       </provider>

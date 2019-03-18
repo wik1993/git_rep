@@ -1,3 +1,5 @@
+package models;
+
 import javax.persistence.*;
 
 @Entity
@@ -59,7 +61,7 @@ public class Mark {
 
     @Override
     public String toString() {
-        return "Mark{" +
+        return "models.Mark{" +
                 "id=" + id +
                 ", value=" + value +
 /*                ", subject=" + subject.getName() +

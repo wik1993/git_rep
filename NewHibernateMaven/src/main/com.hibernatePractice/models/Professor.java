@@ -1,9 +1,13 @@
+package models;
+
 import javax.persistence.*;
 import java.util.List;
 
+
 @Entity
-@Table(name = "students")
-public class Student {
+@Table(name = "professors")
+public class Professor {
+
     @Id
     @Column(name = "id")
     private int id;
@@ -12,18 +16,26 @@ public class Student {
     @Column(name = "last_name")
     private String lastName;
 
+    @ManyToMany(cascade = { CascadeType.ALL })
+    @JoinTable(
+            name = "prof_subject",
+            joinColumns = { @JoinColumn(name = "professor_id") },
+            inverseJoinColumns = { @JoinColumn(name = "subject_id") }
+    )
+    private List<Subject> subjects;
+
     @ManyToOne
-    @JoinColumn(name = "subject_id")
-    private Subject subject;
+    @JoinColumn(name = "university_id")
+    private University university;
 
-    public  Student (){}
 
-    public Student(int id, String firstName, String lastName) {
-        this.id = id;
-        this.firstName = firstName;
-        this.lastName = lastName;
+    public University getUniversity() {
+        return university;
     }
 
+    public void setUniversity(University university) {
+        this.university = university;
+    }
 
     public int getId() {
         return id;
@@ -48,18 +60,9 @@ public class Student {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
-
-    public Subject getSubject() {
-        return subject;
-    }
-
-    public void setSubject(Subject subject) {
-        this.subject = subject;
-    }
-
     @Override
     public String toString() {
-        return "Student{" +
+        return "models.Professor{" +
                 "id=" + id +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +

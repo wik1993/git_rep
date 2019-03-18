@@ -1,3 +1,5 @@
+package models;
+
 import javax.persistence.*;
 import java.util.List;
 
@@ -59,7 +61,7 @@ public class University {
 
     @Override
     public String toString() {
-        return "University{" +
+        return "models.University{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", shortName='" + shortName + '\'' +
