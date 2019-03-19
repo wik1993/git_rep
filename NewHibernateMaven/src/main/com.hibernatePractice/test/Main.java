@@ -1,9 +1,8 @@
 package test;
 
 import models.*;
-import org.hibernate.Criteria;
+
 import org.hibernate.Session;
-import org.hibernate.criterion.Restrictions;
 import org.hibernate.query.Query;
 import service.DBService;
 
@@ -13,11 +12,8 @@ import javax.persistence.criteria.Root;
 
 
 public class Main {
-    public static CriteriaBuilder getCB(){
-        DBService dbService = new DBService();
-        Session session = dbService.getSessionFactory().openSession();
-        CriteriaBuilder cb = session.getCriteriaBuilder();
-        return cb;
+    private static CriteriaBuilder getCB(DBService dbService) {
+        return dbService.getSession().getCriteriaBuilder();
     }
 
    public static Session getSession() {
@@ -35,9 +31,9 @@ public class Main {
 
         //service.update(university);
         //Criteria criteria = getSession().createCriteria(Professor.class).add(Restrictions.eq("id", 1));
-        CriteriaQuery <Professor> criteriaQuery = getCB().createQuery(Professor.class);
+        CriteriaQuery <Professor> criteriaQuery = getCB(service).createQuery(Professor.class);
         Root<Professor> root = criteriaQuery.from(Professor.class);
-        criteriaQuery.select(root).where(getCB().gt(root.get("id"), 0));
+        criteriaQuery.select(root).where(getCB(service).equal(root.get("id"), 1));
         Query<Professor> query = getSession().createQuery(criteriaQuery);
         service.read(query);
     }

@@ -44,7 +44,6 @@ public class AppMain {
         Session session = factory.openSession();
         Transaction tx;
         Integer childID;
-
         tx = session.beginTransaction();
         Child child = new Child(id, firstName, lastName, age);
         childID = (Integer) session.save(child);

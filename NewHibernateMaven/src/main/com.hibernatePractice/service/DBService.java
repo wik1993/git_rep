@@ -13,9 +13,12 @@ import java.util.List;
 
 
 public class DBService {
-
+    private static Session session;
     public SessionFactory getSessionFactory() {
         return new Configuration().configure().buildSessionFactory();
+    }
+    public Session getSession() {
+        return session;
     }
 
     /* Method to SAVE in the database */
