@@ -7,19 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32825cd1-a107-48ed-a41c-eb852f8135b5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/MarkService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/ProfessorService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/SubjectService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/UniversityService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../IdeaProjects/ArrayListTraining/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../IdeaProjects/ArrayListTraining/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NewHibernateMaven/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../NewHibernateMaven/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/DBService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/DBService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/StudentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/DBService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/DBService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/StudentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/StudentService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/test/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/test/Main.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -253,7 +241,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553096879134" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553097045298" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../IdeaProjects/ArrayListTraining" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
@@ -312,6 +300,14 @@
       <option name="presentableId" value="Default" />
       <updated>1552938261440</updated>
     </task>
+    <task id="LOCAL-00001" summary="Finish work in prectice project, made some refactoring and added new features">
+      <created>1553097014948</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1553097014949</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -335,7 +331,7 @@
       <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.3163597" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32827735" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50075644" side_tool="true" weight="0.4680851" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3286119" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32827735" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -410,6 +406,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Finish work in prectice project, made some refactoring and added new features" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finish work in prectice project, made some refactoring and added new features" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
