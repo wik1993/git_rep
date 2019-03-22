@@ -1,5 +1,5 @@
 models\Subject.class
+models\Professor.class
 models\University.class
 models\Student.class
 models\Mark.class
-models\Professor.class
