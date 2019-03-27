@@ -1,26 +1,27 @@
 package internship.model;
 
+
+
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
-
 import java.util.List;
 
 
 @Entity
-@Table(name = "university")
-public class University {
+@Table(name = "subject")
+public class Subject {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
     @Column(name = "name")
     private String name;
-    @Column(name = "short_name")
-    private String shortName;
+    @Column(name = "number_hour")
+    private int numberHour;
 
     @JsonIgnore
-    @OneToMany(mappedBy = "university")
+    @ManyToMany(mappedBy = "subjects")
     private List<Professor> professors;
 
 
@@ -31,6 +32,7 @@ public class University {
     public void setProfessors(List<Professor> professors) {
         this.professors = professors;
     }
+
 
     public int getId() {
         return id;
@@ -48,20 +50,20 @@ public class University {
         this.name = name;
     }
 
-    public String getShortName() {
-        return shortName;
+    public int getNumberHour() {
+        return numberHour;
     }
 
-    public void setShortName(String shortName) {
-        this.shortName = shortName;
+    public void setNumberHour(int numbeHour) {
+        this.numberHour = numberHour;
     }
 
-    @Override
+   @Override
     public String toString() {
-        return "models.University{" +
+        return "models.Subject{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", shortName='" + shortName + '\'' +
+                ", numberHour=" + numberHour +
                 '}';
     }
 }
