@@ -2,7 +2,7 @@ package internship.controller;
 
 
 import internship.model.Student;
-import internship.repository.StudentRepository;
+import internship.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
@@ -14,13 +14,13 @@ import org.springframework.web.bind.annotation.*;
 public class StudentController {
 
     @Autowired
-    private StudentRepository studentRepository;
+    private StudentService studentService;
 
     @PostMapping(path = "/add")
     public @ResponseBody
     ResponseEntity<Student> addStudent(@RequestBody Student student) {
         try {
-            studentRepository.save(student);
+            studentService.addStudent(student);
         }catch (Exception e){
             e.printStackTrace();
             return ResponseEntity.badRequest().build();
@@ -31,26 +31,25 @@ public class StudentController {
     @PutMapping(path = "/{id}")
     public @ResponseBody
     ResponseEntity<Student> udpateStudent(@PathVariable("id") Integer id, @RequestBody Student student) {
-        studentRepository.findById(id)
-                .map(stud -> {
-                    stud.setFirstName(student.getFirstName());
-                    stud.setLastName(student.getLastName());
-                    Student updated = studentRepository.save(stud);
-                    return ResponseEntity.ok().body(updated);
-                });
-        return ResponseEntity.notFound().build();
+        try{
+            studentService.updateStudent(id, student);
+        }catch (Exception e){
+            e.printStackTrace();
+            ResponseEntity.notFound().build();
+        }
+        return ResponseEntity.ok().build();
     }
 
     @GetMapping(path = "/all")
     public @ResponseBody
     Iterable<Student> findAllStudents() {
-        return studentRepository.findAll();
+        return studentService.findAllStudents();
     }
 
     @GetMapping(path = "/{id}")
     public @ResponseBody
     ResponseEntity<Student> findById(@PathVariable("id") Integer id) {
-        return studentRepository.findById(id)
+        return studentService.findStudentById(id)
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
     }
@@ -59,7 +58,7 @@ public class StudentController {
     public @ResponseBody
     ResponseEntity<Student> deleteById(@PathVariable("id") Integer id) {
         try {
-            studentRepository.deleteById(id);
+            studentService.deleteStudent(id);
         } catch (Exception e) {
             e.printStackTrace();
             return ResponseEntity.notFound().build();

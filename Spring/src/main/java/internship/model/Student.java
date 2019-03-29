@@ -1,7 +1,6 @@
 package internship.model;
 
 
-
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
@@ -11,7 +10,7 @@ import javax.persistence.*;
 public class Student {
     @Id
     @Column(name = "id")
-    @GeneratedValue(strategy= GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     @Column(name = "first_name")
     private String firstName;

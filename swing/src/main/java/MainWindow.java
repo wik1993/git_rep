@@ -1,6 +1,5 @@
 
-import service.ProfessorService;
-import service.StudentService;
+
 
 import javax.swing.*;
 

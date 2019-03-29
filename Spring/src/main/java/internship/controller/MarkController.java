@@ -1,7 +1,7 @@
 package internship.controller;
 
 import internship.model.Mark;
-import internship.repository.MarkRepository;
+import internship.service.MarkService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
@@ -12,13 +12,13 @@ import org.springframework.web.bind.annotation.*;
 public class MarkController {
 
     @Autowired
-    private MarkRepository markRepository;
+    private MarkService markService;
 
     @PostMapping(path = "/add")
     public @ResponseBody
     ResponseEntity addmark(@RequestBody Mark mark) {
         try {
-            markRepository.save(mark);
+            markService.addMark(mark);
         } catch (Exception e) {
             e.printStackTrace();
             return ResponseEntity.badRequest().build();
@@ -29,32 +29,32 @@ public class MarkController {
     @PutMapping(path = "/{id}")
     public @ResponseBody
     ResponseEntity<Mark> updateMark(@PathVariable("id") Integer id, @RequestBody Mark mark) {
-        markRepository.findById(id)
-                .map(m -> {
-                    m.setValue(mark.getValue());
-                    Mark updated = markRepository.save(m);
-                    return ResponseEntity.ok().body(updated);
-                });
-        return ResponseEntity.notFound().build();
+        try {
+            markService.updateMark(id, mark);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return ResponseEntity.notFound().build();
+        }
+        return ResponseEntity.ok().build();
     }
 
     @GetMapping(path = "/all")
     public @ResponseBody
     Iterable<Mark> findAllMarks() {
-        return markRepository.findAll();
+        return markService.findAllMarks();
     }
 
     @GetMapping(path = "/{id}")
     public @ResponseBody
     ResponseEntity<Mark> findById(@PathVariable("id") Integer id) {
-        return markRepository.findById(id).map(ResponseEntity::ok).orElse(ResponseEntity.notFound().build());
+        return markService.findMarkById(id).map(ResponseEntity::ok).orElse(ResponseEntity.notFound().build());
     }
 
     @DeleteMapping(path = "/{id}")
     public @ResponseBody
     ResponseEntity deleteById(@PathVariable("id") Integer id) {
         try {
-            markRepository.deleteById(id);
+            markService.deleteMark(id);
         } catch (Exception e) {
             e.printStackTrace();
             return ResponseEntity.notFound().build();

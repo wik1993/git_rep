@@ -70,9 +70,4 @@ public class UniversityContoller {
         return universityService.findUniversityByShortName(university);
     }
 
-    @GetMapping(path = "/dummy")
-    public @ResponseBody
-    String dummyReturn() {
-        return "Dymmy Return";
-    }
 }

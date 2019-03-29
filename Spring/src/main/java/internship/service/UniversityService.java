@@ -4,8 +4,8 @@ import internship.model.University;
 
 import java.util.Optional;
 
-
 public interface UniversityService  {
+
     void addUniversity(University university);
 
     void updateUniversity(Integer id, University university);

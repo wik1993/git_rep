@@ -1,7 +1,6 @@
 package internship.model;
 
 
-
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
@@ -12,7 +11,7 @@ import java.util.List;
 @Table(name = "professor")
 public class Professor {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private int id;
     @Column(name = "first_name")
@@ -27,7 +26,7 @@ public class Professor {
             joinColumns = {@JoinColumn(name = "professor_id")},
             inverseJoinColumns = {@JoinColumn(name = "subject_id")}
     )
-    private List<Subject> subjects;
+    private List<Subject> subject;
 
     @JsonIgnore
     @ManyToOne
@@ -65,6 +64,7 @@ public class Professor {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
+
     @Override
     public String toString() {
         return "models.Professor{" +

@@ -1,7 +1,6 @@
 package internship.model;
 
 
-
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
@@ -13,7 +12,7 @@ import java.util.List;
 public class Subject {
     @Id
     @Column(name = "id")
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     @Column(name = "name")
     private String name;
@@ -21,7 +20,7 @@ public class Subject {
     private int numberHour;
 
     @JsonIgnore
-    @ManyToMany(mappedBy = "subjects")
+    @ManyToMany(mappedBy = "subject")
     private List<Professor> professors;
 
 
@@ -54,11 +53,11 @@ public class Subject {
         return numberHour;
     }
 
-    public void setNumberHour(int numbeHour) {
+    public void setNumberHour(int numberHour) {
         this.numberHour = numberHour;
     }
 
-   @Override
+    @Override
     public String toString() {
         return "models.Subject{" +
                 "id=" + id +

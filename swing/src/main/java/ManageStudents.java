@@ -15,7 +15,6 @@ public class ManageStudents {
     private StudentService service = new StudentService();
     private JTable table;
     private JTextField t1, t2, t3;
-    private JButton b1, b2, b3;
 
     ManageStudents() {
         JFrame frame = new JFrame("Manage Students");
@@ -45,14 +44,14 @@ public class ManageStudents {
         t2.setBounds(90, 100, 200, 30);
         t3.setBounds(90, 150, 200, 30);
 
-        b1 = new JButton("Delete");
-        b2 = new JButton("Add");
-        b3 = new JButton("Update");
-        b1.setBounds(10, 200, 95, 30);
-        b2.setBounds(120, 200, 95, 30);
-        b3.setBounds(230, 200, 95, 30);
+        JButton delete = new JButton("Delete");
+        JButton add = new JButton("Add");
+        JButton update = new JButton("Update");
+        delete.setBounds(10, 200, 95, 30);
+        add.setBounds(120, 200, 95, 30);
+        update.setBounds(230, 200, 95, 30);
 
-        b1.addActionListener(new ActionListener() {
+        delete.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String id = t1.getText();
@@ -60,7 +59,7 @@ public class ManageStudents {
                 service.deleteStudent(student);
             }
         });
-        b2.addActionListener(new ActionListener() {
+        add.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String id = t1.getText();
@@ -73,7 +72,7 @@ public class ManageStudents {
                 service.addStudent(student);
             }
         });
-        b3.addActionListener(new ActionListener() {
+        update.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String id = t1.getText();
@@ -86,9 +85,9 @@ public class ManageStudents {
             }
         });
 
-        frame.add(b1);
-        frame.add(b2);
-        frame.add(b3);
+        frame.add(delete);
+        frame.add(add);
+        frame.add(update);
         frame.add(t1);
         frame.add(t2);
         frame.add(t3);
