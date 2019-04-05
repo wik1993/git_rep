@@ -99,7 +99,7 @@ public class ManageProfessors {
         frame.add(l3);
         frame.add(panel);
         frame.setSize(1200, 650);
-        frame.setLocation(150, 150);
+        frame.setLocation(100, 50);
         frame.setVisible(true);
     }
 
@@ -107,12 +107,6 @@ public class ManageProfessors {
         model.addColumn("Id");
         model.addColumn("First Name");
         model.addColumn("Last Name");
-        /*Professor professor = service.getProfessor(2);
-        Object[] rowData = new Object[3];
-        rowData[0] = professor.getId();
-        rowData[1] = professor.getFirstName();
-        rowData[2] = professor.getLastName();
-        model.addRow(rowData);*/
         List<Professor> list = service.getAllProfessors();
         Object[] rowData = new Object[3];
         for (Professor professor : list) {

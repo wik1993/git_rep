@@ -56,7 +56,7 @@ public class ManageSubjects {
             @Override
             public void actionPerformed(ActionEvent e) {
                 Integer id1 = Integer.valueOf(id.getText());
-                service.getSubject(id1);
+                service.deleteSubject(id1);
             }
         });
 
@@ -98,7 +98,7 @@ public class ManageSubjects {
         frame.add(l3);
         frame.add(panel);
         frame.setSize(1200, 650);
-        frame.setLocation(150, 150);
+        frame.setLocation(100, 50);
         frame.setVisible(true);
     }
 
@@ -106,12 +106,6 @@ public class ManageSubjects {
         model.addColumn("Id");
         model.addColumn("Subject Name");
         model.addColumn("Number of Hours");
-       /* Student student = service.getStudent(2);
-        Object[] rowData = new Object[3];
-        rowData[0] = student.getId();
-        rowData[1] = student.getsubjectName();
-        rowData[2] = student.getnumberOfHours();
-        model.addRow(rowData);*/
         List<Subject> list = service.getAllSubjects();
         Object[] rowData = new Object[3];
         for (Subject subject : list) {

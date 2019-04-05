@@ -76,7 +76,7 @@ public class ManageMarks {
             public void actionPerformed(ActionEvent e) {
                 Integer id1 = Integer.valueOf(id.getText());
                 String valueText = value.getText();
-                Mark mark = service.getmark(Integer.valueOf(valueText));
+                Mark mark = service.getMark(Integer.valueOf(valueText));
                 mark.setValue(Integer.parseInt(valueText));
                 service.updateMark(mark,id1);
             }
@@ -91,14 +91,14 @@ public class ManageMarks {
         frame.add(l2);
         frame.add(panel);
         frame.setSize(1200, 650);
-        frame.setLocation(150, 150);
+        frame.setLocation(100, 50);
         frame.setVisible(true);
     }
 
     private void addMarksToTable() {
         model.addColumn("Id");
         model.addColumn("Value");
-        List<Mark> list = service.getAllmarks();
+        List<Mark> list = service.getAllMarks();
         Object[] rowData = new Object[3];
         for (Mark student : list) {
             rowData[0] = student.getId();

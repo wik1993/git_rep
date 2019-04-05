@@ -1,8 +1,6 @@
 
 
-import controller.ManageProfessors;
-import controller.ManageStudents;
-import controller.ManageUniversities;
+import controller.*;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -37,7 +35,7 @@ public class Main {
         frame.add(universities);
         universities.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                new controller.ManageMarks();
+                new ManageMarks();
             }
         });
 
@@ -55,11 +53,12 @@ public class Main {
         frame.add(marks);
         marks.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                new controller.ManageSubjects();
+                new ManageSubjects();
             }
         });
 
         frame.setSize(300, 300);
+        frame.setLocation(500, 200);
         frame.setLayout(null);
         frame.setVisible(true);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

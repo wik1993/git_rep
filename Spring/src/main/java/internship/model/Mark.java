@@ -14,6 +14,7 @@ public class Mark {
 
     @Column(name = "value")
     private int value;
+
     @JsonIgnore
     @ManyToOne
     @JoinColumn(name = "subject_id")

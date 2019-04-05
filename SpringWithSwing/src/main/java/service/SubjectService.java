@@ -9,14 +9,18 @@ import java.util.List;
 
 public class SubjectService {
 
-    private RestTemplate restTemplate = new RestTemplate();
+    private RestTemplate restTemplate;
+
+    public SubjectService(){
+        restTemplate = new RestTemplate();
+    }
 
     public Subject getSubject(Integer id) {
         return restTemplate.getForEntity("http://localhost:8080/subject/"+id, Subject.class).getBody();
     }
 
     public List<Subject> getAllSubjects (){
-        RestTemplate restTemplate = new RestTemplate();
+
         ResponseEntity<List<Subject>> response = restTemplate.exchange(
                 "http://localhost:8080/subject/all",
                 HttpMethod.GET,

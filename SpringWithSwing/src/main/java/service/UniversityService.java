@@ -1,6 +1,4 @@
 package service;
-
-
 import model.University;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.HttpMethod;
@@ -11,14 +9,17 @@ import java.util.List;
 
 public class UniversityService {
 
-    private RestTemplate restTemplate = new RestTemplate();
+    private RestTemplate restTemplate;
+
+    public UniversityService(){
+        restTemplate = new RestTemplate();
+    }
 
     public University getUniversity(Integer id) {
         return restTemplate.getForEntity("http://localhost:8080/univer/"+id, University.class).getBody();
     }
 
     public List<University> getAllUniversities (){
-        RestTemplate restTemplate = new RestTemplate();
         ResponseEntity<List<University>> response = restTemplate.exchange(
                 "http://localhost:8080/univer/all",
                 HttpMethod.GET,

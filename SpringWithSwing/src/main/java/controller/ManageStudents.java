@@ -99,7 +99,7 @@ public class ManageStudents {
         frame.add(l3);
         frame.add(panel);
         frame.setSize(1200, 650);
-        frame.setLocation(150, 150);
+        frame.setLocation(100, 50);
         frame.setVisible(true);
     }
 

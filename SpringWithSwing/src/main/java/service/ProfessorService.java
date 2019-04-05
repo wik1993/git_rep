@@ -10,16 +10,20 @@ import java.util.List;
 
 public class ProfessorService {
 
-    private RestTemplate restTemplate = new RestTemplate();
+    private RestTemplate restTemplate;
+
+    public ProfessorService(){
+        restTemplate = new RestTemplate();
+    }
 
     public Professor getProfessor(Integer id) {
-        return restTemplate.getForEntity("http://localhost:8080/profesor/"+id, Professor.class).getBody();
+        return restTemplate.getForEntity("http://localhost:8080/professor/"+id, Professor.class).getBody();
     }
 
     public List<Professor> getAllProfessors (){
-        RestTemplate restTemplate = new RestTemplate();
+
         ResponseEntity<List<Professor>> response = restTemplate.exchange(
-                "http://localhost:8080/profesor/all",
+                "http://localhost:8080/professor/all",
                 HttpMethod.GET,
                 null,
                 new ParameterizedTypeReference<List<Professor>>(){});
@@ -27,14 +31,14 @@ public class ProfessorService {
     }
 
     public void addProfessor(Professor professor){
-        restTemplate.postForObject("http://localhost:8080/profesor/add", professor, Professor.class);
+        restTemplate.postForObject("http://localhost:8080/professor/add", professor, Professor.class);
     }
 
-    public void updateProfessor(Professor profesor, Integer id){
-        restTemplate.put("http://localhost:8080/profesor/"+ id, profesor, Professor.class);
+    public void updateProfessor(Professor professor, Integer id){
+        restTemplate.put("http://localhost:8080/professor/"+ id, professor, Professor.class);
     }
 
     public void deleteProfessor(Integer id){
-        restTemplate.delete("http://localhost:8080/profesor/"+id);
+        restTemplate.delete("http://localhost:8080/professor/"+id);
     }
 }

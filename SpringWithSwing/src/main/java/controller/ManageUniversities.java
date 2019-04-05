@@ -20,7 +20,7 @@ public class ManageUniversities {
     private JTextField id, name, shortName;
 
     public ManageUniversities() {
-        JFrame frame = new JFrame("Manage Professors");
+        JFrame frame = new JFrame("Manage Universities");
         addUniversitiesToTable();
         tableMouseClicked();
         JScrollPane sp = new JScrollPane();
@@ -70,7 +70,6 @@ public class ManageUniversities {
                 university.setName(name1);
                 university.setShortName(shortName1);
                 service.addUniversity(university);
-                table.repaint();
                 table.revalidate();
             }
         });
@@ -99,7 +98,7 @@ public class ManageUniversities {
         frame.add(l3);
         frame.add(panel);
         frame.setSize(1200, 650);
-        frame.setLocation(150, 150);
+        frame.setLocation(100, 50);
         frame.setVisible(true);
     }
 
@@ -107,12 +106,6 @@ public class ManageUniversities {
         model.addColumn("Id");
         model.addColumn("Name");
         model.addColumn("Short Name");
-       /* University university = service.getUniversity(2);
-        Object[] rowData = new Object[3];
-        rowData[0] = university.getId();
-        rowData[1] = university.getName();
-        rowData[2] = university.getShortName();
-        model.addRow(rowData);*/
         List<University> list = service.getAllUniversities();
         Object[] rowData = new Object[3];
         for (University university : list) {
