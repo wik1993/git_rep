@@ -1,5 +1,6 @@
 package internship.controller;
 
+import internship.dto.CustomerOrderDTO;
 import internship.model.Customer;
 import internship.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,7 +29,8 @@ public class CustomerController {
 
     @GetMapping(path = "/all")
     public @ResponseBody
-    Iterable<Customer> findAllCustomers() {
+    Iterable<Customer> findAllCustomers(){
         return customerService.findAllCustomers();
     }
+
 }

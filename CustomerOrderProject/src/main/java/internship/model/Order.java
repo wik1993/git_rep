@@ -1,7 +1,5 @@
 package internship.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-
 import javax.persistence.*;
 
 @Entity
@@ -13,10 +11,10 @@ public class Order {
     private Integer id;
     @Column(name = "price")
     private Integer price;
-    @Column (name = "date")
+    @Column (name = "created_date")
     private String date;
 
-    @JsonIgnore
+
     @ManyToOne
     @JoinColumn(name = "customer_id")
     private Customer customer;

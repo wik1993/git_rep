@@ -3,6 +3,7 @@ package internship.model;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
+import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -18,9 +19,6 @@ public class Customer {
     @Column(name = "email")
     private String email;
 
-    @JsonIgnore
-    @OneToMany(mappedBy = "customer")
-    private Set<Order> orders;
 
     public Integer getId() {
         return id;
@@ -45,15 +43,6 @@ public class Customer {
     public void setEmail(String email) {
         this.email = email;
     }
-
-    public Set<Order> getOrders() {
-        return orders;
-    }
-
-    public void setOrders(Set<Order> orders) {
-        this.orders = orders;
-    }
-
 
     @Override
     public String toString() {
