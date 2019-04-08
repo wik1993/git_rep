@@ -1,5 +1,8 @@
 package internship.model;
 
+import com.fasterxml.jackson.annotation.*;
+import com.fasterxml.jackson.databind.annotation.JsonTypeIdResolver;
+
 import javax.persistence.*;
 
 @Entity
@@ -13,7 +16,6 @@ public class Order {
     private Integer price;
     @Column (name = "created_date")
     private String date;
-
 
     @ManyToOne
     @JoinColumn(name = "customer_id")

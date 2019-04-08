@@ -22,4 +22,9 @@ public class OrderServiceImpl implements OrderService {
         return orderRepository.findAllByCustomer(customer);
     }
 
+    @Override
+    public void addOrder(Order order) {
+         orderRepository.save(order);
+    }
+
 }

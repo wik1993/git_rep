@@ -1,6 +1,5 @@
 package internship.controller;
 
-import internship.dto.CustomerOrderDTO;
 import internship.model.Customer;
 import internship.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -7,4 +7,6 @@ public interface OrderService {
     Iterable<Order> findAllOrders();
 
     Iterable<Order> findCustomerOrders(Customer customer);
+
+    void addOrder (Order order);
 }
