@@ -12,10 +12,6 @@ public class OrderServiceImpl implements OrderService {
     @Autowired
     private OrderRepository orderRepository;
 
-    @Override
-    public Iterable<Order> findAllOrders() {
-        return orderRepository.findAll();
-    }
 
     @Override
     public Iterable<Order> findCustomerOrders(Customer customer) {

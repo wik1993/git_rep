@@ -3,9 +3,12 @@ package internship.controller;
 import internship.dto.CustomerOrderDTO;
 import internship.model.Customer;
 import internship.model.Order;
+import internship.service.CustomerOrderDTOService;
 import internship.service.CustomerService;
 import internship.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.*;
 
@@ -22,26 +25,27 @@ public class OrderController  {
     @Autowired
     private CustomerService customerService;
 
-    @GetMapping(path = "/all")
-    public @ResponseBody
-    Iterable<Order> findAllOrders(){
-       return orderService.findAllOrders();
-    }
+    @Autowired
+    private CustomerOrderDTOService customerOrderDTOService;
 
     @GetMapping(path = "/customerId/{id}")
     public @ResponseBody CustomerOrderDTO findCustomerOrders(@PathVariable("id") Integer id){
         Customer customer = customerService.findCustomerById(id).orElse(null);
         List<Order> orderList = (List<Order>) orderService.findCustomerOrders(customer);
-        CustomerOrderDTO customerOrderDTO = new CustomerOrderDTO();
-        customerOrderDTO.setCustomer(customer);
-        customerOrderDTO.setOrderList(orderList);
-        return customerOrderDTO;
+        return customerOrderDTOService.getDTO(customer, orderList);
     }
 
     @PostMapping(path = "/add/{id}")
-    public @ResponseBody void addOrderForCustomer(@PathVariable ("id") Integer id,@RequestBody Order order) {
-        Customer customer = customerService.findCustomerById(id).orElse(null);
-        order.setCustomer(customer);
-        orderService.addOrder(order);
+    public @ResponseBody
+    ResponseEntity addOrderForCustomer(@PathVariable ("id") Integer id, @RequestBody Order order) {
+        try {
+            Customer customer = customerService.findCustomerById(id).orElse(null);
+            order.setCustomer(customer);
+            orderService.addOrder(order);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return ResponseEntity.badRequest().build();
+        }
+        return new ResponseEntity(HttpStatus.CREATED);
     }
 }
