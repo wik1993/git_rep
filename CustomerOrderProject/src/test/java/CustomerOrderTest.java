@@ -1,10 +1,12 @@
+import internship.dto.CustomerOrderDTO;
 import internship.model.Customer;
 import internship.model.Order;
-import org.aspectj.weaver.ast.Or;
 import org.junit.Test;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
+
+import static junit.framework.TestCase.assertNotNull;
 import static junit.framework.TestCase.assertTrue;
 import static org.junit.Assert.assertEquals;
 
@@ -43,7 +45,6 @@ public class CustomerOrderTest extends AbstractTest {
         Order order = new Order();
         order.setPrice(50);
         order.setDate("22/12/2020");
-
         String inputJson = super.mapToJson(order);
         MvcResult mvcResult = mvc.perform(MockMvcRequestBuilders.post(uri)
                 .contentType(MediaType.APPLICATION_JSON_VALUE).content(inputJson)).andReturn();
@@ -58,8 +59,8 @@ public class CustomerOrderTest extends AbstractTest {
                 .accept(MediaType.APPLICATION_JSON_VALUE)).andReturn();
         int status = mvcResult.getResponse().getStatus();
         String content = mvcResult.getResponse().getContentAsString();
-        Order[] orders = super.mapFromJson(content, Order[].class);
+        CustomerOrderDTO customerOrderDTOS = super.mapFromJson(content, CustomerOrderDTO.class);
+        assertNotNull(customerOrderDTOS);
         assertEquals(200, status);
-        assertTrue(orders.length > 0);
     }
 }

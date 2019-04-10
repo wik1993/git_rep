@@ -3,9 +3,11 @@ package internship.service;
 import internship.model.Customer;
 import internship.model.Order;
 
+import java.util.List;
+
 public interface OrderService {
 
-    Iterable<Order> findCustomerOrders(Customer customer);
+    List<Order> findCustomerOrders(Customer customer);
 
     void addOrder (Order order);
 }

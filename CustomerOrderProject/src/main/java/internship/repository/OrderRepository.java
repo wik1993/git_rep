@@ -4,6 +4,8 @@ import internship.model.Customer;
 import internship.model.Order;
 import org.springframework.data.repository.CrudRepository;
 
+import java.util.List;
+
 public interface OrderRepository extends CrudRepository <Order, Integer> {
-    Iterable<Order> findAllByCustomer(Customer customer);
+    List<Order> findAllByCustomer(Customer customer);
 }

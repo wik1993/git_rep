@@ -6,6 +6,8 @@ import internship.repository.OrderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class OrderServiceImpl implements OrderService {
 
@@ -14,7 +16,7 @@ public class OrderServiceImpl implements OrderService {
 
 
     @Override
-    public Iterable<Order> findCustomerOrders(Customer customer) {
+    public List<Order> findCustomerOrders(Customer customer) {
         return orderRepository.findAllByCustomer(customer);
     }
 

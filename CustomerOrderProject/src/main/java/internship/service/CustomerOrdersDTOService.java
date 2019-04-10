@@ -7,6 +7,6 @@ import internship.model.Order;
 import java.util.List;
 
 
-public interface CustomerOrderDTOService {
+public interface CustomerOrdersDTOService {
     CustomerOrderDTO getDTO(Customer customer, List<Order> list);
 }

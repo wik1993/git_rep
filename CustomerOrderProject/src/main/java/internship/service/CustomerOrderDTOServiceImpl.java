@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class CustomerOrderDTOServiceImpl implements  CustomerOrderDTOService{
+public class CustomerOrderDTOServiceImpl implements  CustomerOrdersDTOService{
     @Override
     public CustomerOrderDTO getDTO(Customer customer, List<Order> list) {
         CustomerOrderDTO customerOrderDTO = new CustomerOrderDTO();

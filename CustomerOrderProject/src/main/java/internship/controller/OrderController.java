@@ -1,9 +1,8 @@
 package internship.controller;
-
 import internship.dto.CustomerOrderDTO;
 import internship.model.Customer;
 import internship.model.Order;
-import internship.service.CustomerOrderDTOService;
+import internship.service.CustomerOrdersDTOService;
 import internship.service.CustomerService;
 import internship.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,9 +10,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
-import java.util.Optional;
 
 @Service
 @RequestMapping(path = "/order")
@@ -26,13 +23,15 @@ public class OrderController  {
     private CustomerService customerService;
 
     @Autowired
-    private CustomerOrderDTOService customerOrderDTOService;
+    private CustomerOrdersDTOService customerOrderDTOService;
 
     @GetMapping(path = "/customerId/{id}")
     public @ResponseBody CustomerOrderDTO findCustomerOrders(@PathVariable("id") Integer id){
         Customer customer = customerService.findCustomerById(id).orElse(null);
         List<Order> orderList = (List<Order>) orderService.findCustomerOrders(customer);
         return customerOrderDTOService.getDTO(customer, orderList);
+
+
     }
 
     @PostMapping(path = "/add/{id}")
