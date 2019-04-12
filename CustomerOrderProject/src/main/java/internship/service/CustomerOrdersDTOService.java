@@ -8,5 +8,5 @@ import java.util.List;
 
 
 public interface CustomerOrdersDTOService {
-    CustomerOrderDTO getDTO(Customer customer, List<Order> list);
+     CustomerOrderDTO getDTO(Customer customer, List<Order> list);
 }

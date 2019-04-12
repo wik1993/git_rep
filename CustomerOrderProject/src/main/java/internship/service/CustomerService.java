@@ -8,5 +8,5 @@ import java.util.Optional;
 public interface CustomerService {
     void addCustomer(Customer customer);
     List<Customer> findAllCustomers();
-    Optional<Customer> findCustomerById(Integer id);
+    Customer findById(Integer id);
 }
