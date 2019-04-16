@@ -1,0 +1,2 @@
+2019-04-15 09:41:52,325 DEBUG internship.controller.CustomerController [http-nio-8080-exec-1] Fetching customers from database
+2019-04-15 09:42:37,877 DEBUG internship.controller.OrderController [http-nio-8080-exec-3] Fetching customer's orders

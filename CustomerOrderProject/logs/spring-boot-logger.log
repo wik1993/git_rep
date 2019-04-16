@@ -1,0 +1,2 @@
+2019-04-16 10:15:24,926 DEBUG internship.controller.CustomerController [http-nio-8080-exec-1] Start adding a customer
+2019-04-16 10:15:25,304 INFO internship.controller.CustomerController [http-nio-8080-exec-1] Customer is added to database
