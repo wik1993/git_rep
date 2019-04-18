@@ -8,6 +8,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 
 @Controller
 @RequestMapping(path = "/subject")
@@ -41,8 +43,15 @@ public class SubjectController {
 
     @GetMapping(path = "/all")
     public @ResponseBody
-    Iterable<Subject> findAllSubjects() {
-        return subjectService.findAllSubjects();
+    ResponseEntity<List<Subject>> findAllSubjects() {
+        List<Subject> list;
+        try{
+           list = subjectService.findAllSubjects();
+        } catch (Exception e) {
+            e.printStackTrace();
+           return ResponseEntity.notFound().build();
+        }
+        return ResponseEntity.ok(list);
     }
 
     @GetMapping(path = "/{id}")

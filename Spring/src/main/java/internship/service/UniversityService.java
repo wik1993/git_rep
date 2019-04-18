@@ -2,6 +2,7 @@ package internship.service;
 
 import internship.model.University;
 
+import java.util.List;
 import java.util.Optional;
 
 public interface UniversityService  {
@@ -10,11 +11,11 @@ public interface UniversityService  {
 
     void updateUniversity(Integer id, University university);
 
-    Iterable<University> findAllUniversities();
+    List<University> findAllUniversities();
 
     Optional<University> findUniversityById(Integer id);
 
     void deleteUniversity(Integer id);
 
-    Iterable<University> findUniversityByShortName(String shortName);
+    List<University> findUniversityByShortName(String shortName);
 }

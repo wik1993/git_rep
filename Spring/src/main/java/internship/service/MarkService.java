@@ -1,7 +1,9 @@
 package internship.service;
 
 import internship.model.Mark;
+import internship.model.Student;
 
+import java.util.List;
 import java.util.Optional;
 
 public interface MarkService {
@@ -10,7 +12,9 @@ public interface MarkService {
 
     void updateMark(Integer id, Mark mark);
 
-    Iterable<Mark> findAllMarks();
+    List<Mark> findAllMarks();
+
+    List<Mark> findAllMarksByStudent(Student student);
 
     Optional<Mark> findMarkById(Integer id);
 

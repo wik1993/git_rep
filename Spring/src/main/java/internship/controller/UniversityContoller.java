@@ -3,9 +3,12 @@ package internship.controller;
 import internship.model.University;
 import internship.service.UniversityService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @Controller
 @RequestMapping(path = "/univer")
@@ -40,8 +43,15 @@ public class UniversityContoller {
 
     @GetMapping(path = "/all")
     public @ResponseBody
-    Iterable<University> findAllUniversities() {
-        return universityService.findAllUniversities();
+    ResponseEntity<List<University>> findAllUniversities() {
+        List<University> list;
+        try{
+           list = universityService.findAllUniversities();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return ResponseEntity.notFound().build();
+        }
+        return ResponseEntity.ok(list);
     }
 
     @GetMapping(path = "/{id}")
@@ -66,8 +76,15 @@ public class UniversityContoller {
 
     @GetMapping(path = "/short/{shortName}")
     public @ResponseBody
-    Iterable<University> findUniverbyShortName(@PathVariable("shortName") String university) {
-        return universityService.findUniversityByShortName(university);
+    ResponseEntity<University> findUniverbyShortName(@PathVariable("shortName") String university) {
+        try{
+            universityService.findUniversityByShortName(university);
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+            return ResponseEntity.notFound().build();
+        }
+        return ResponseEntity.ok().build();
     }
 
 }

@@ -9,6 +9,7 @@ import javax.persistence.criteria.Root;
 import java.util.List;
 
 public class MarkService {
+
     private DBService service = DBService.getDbService();
 
     public void addMark(Mark mark){
@@ -29,7 +30,7 @@ public class MarkService {
         }
     }
 
-    public List<Mark> getMarksByValue(Integer id){
+    public List getMarksByValue(Integer id){
         CriteriaBuilder criteriaBuilder = service.getCriteriaBuilder();
         CriteriaQuery criteriaQuery = service.getCriteriaQuery(Mark.class);
         Root mark = criteriaQuery.from(Mark.class);

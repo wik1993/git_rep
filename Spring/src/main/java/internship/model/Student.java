@@ -16,6 +16,8 @@ public class Student {
     private String firstName;
     @Column(name = "last_name")
     private String lastName;
+    @Column(name = "responsible_email")
+    private String responsibleEmail;
 
     @JsonIgnore
     @ManyToOne
@@ -55,12 +57,21 @@ public class Student {
         this.subject = subject;
     }
 
+    public String getResponsibleEmail() {
+        return responsibleEmail;
+    }
+
+    public void setResponsibleEmail(String responsibleEmail) {
+        this.responsibleEmail = responsibleEmail;
+    }
+
     @Override
     public String toString() {
-        return "models.Student{" +
+        return "Student{" +
                 "id=" + id +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
+                ", responsibleEmail='" + responsibleEmail + '\'' +
                 '}';
     }
 }

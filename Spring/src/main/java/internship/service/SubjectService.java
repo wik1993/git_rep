@@ -2,6 +2,7 @@ package internship.service;
 
 import internship.model.Subject;
 
+import java.util.List;
 import java.util.Optional;
 
 public interface SubjectService {
@@ -9,7 +10,7 @@ public interface SubjectService {
 
     void updateSubject(Integer id, Subject subject);
 
-    Iterable<Subject> findAllSubjects();
+    List<Subject> findAllSubjects();
 
     Optional<Subject> findSubjectById(Integer id);
 

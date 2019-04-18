@@ -2,6 +2,7 @@ package internship.service;
 
 import internship.model.Student;
 
+import java.util.List;
 import java.util.Optional;
 
 public interface StudentService {
@@ -10,7 +11,7 @@ public interface StudentService {
 
     void updateStudent(Integer id, Student student);
 
-    Iterable<Student> findAllStudents();
+    List<Student> findAllStudents();
 
     Optional<Student> findStudentById(Integer id);
 

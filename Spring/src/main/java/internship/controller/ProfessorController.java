@@ -7,6 +7,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 
 @Controller
 @RequestMapping(path = "/professor")
@@ -41,8 +43,15 @@ public class ProfessorController {
 
     @GetMapping(path = "/all")
     public @ResponseBody
-    Iterable<Professor> findAllProfessors() {
-        return professorService.findAllProfessors();
+    ResponseEntity<List<Professor>> findAllProfessors() {
+        List<Professor> list;
+        try{
+           list = professorService.findAllProfessors();
+        }catch (Exception e) {
+            e.printStackTrace();
+            return ResponseEntity.notFound().build();
+        }
+        return ResponseEntity.ok(list);
     }
 
     @GetMapping(path = "/{id}")

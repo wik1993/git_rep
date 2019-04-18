@@ -1,11 +1,13 @@
 package internship.service;
 
 import internship.model.Mark;
+import internship.model.Student;
 import internship.repository.MarkRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -30,8 +32,13 @@ public class MarkServiceImpl implements MarkService {
     }
 
     @Override
-    public Iterable<Mark> findAllMarks() {
+    public List<Mark> findAllMarks() {
         return markRepository.findAll();
+    }
+
+    @Override
+    public List<Mark> findAllMarksByStudent(Student student) {
+        return markRepository.findAllByStudent(student);
     }
 
     @Override

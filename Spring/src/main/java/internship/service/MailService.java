@@ -1,43 +1,34 @@
-package mail;
+package internship.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.stereotype.Service;
 
 import javax.mail.MessagingException;
 import javax.mail.internet.MimeMessage;
 
-
-@RestController
-public class SimpleMailController {
-
+@Service
+public class MailService {
     private JavaMailSender sender;
 
     @Autowired
-    public SimpleMailController(JavaMailSender sender) {
+    public MailService(JavaMailSender sender){
         this.sender = sender;
     }
 
-    @RequestMapping("/sendMail")
-    public String sendMail() {
+    public void reportMarksToResponsible(){
         MimeMessage message = sender.createMimeMessage();
         MimeMessageHelper helper = new MimeMessageHelper(message);
-        Human human = new Human();
-        human.setAge(1);
-        human.setName("Borea");
 
         try {
             helper.setTo("gligor.viktor@gmail.com");
-            helper.setText(human.toString());
+            helper.setText("Test");
             helper.setSubject("Mail From Spring Boot made by Gligor Victor");
         } catch (MessagingException e) {
             e.printStackTrace();
-            return "Error while sending mail ..";
-        }
 
+        }
         sender.send(message);
-        return "Mail Sent Success!";
     }
 }
