@@ -37,10 +37,6 @@ public class MarkServiceImpl implements MarkService {
         return markRepository.findAll();
     }
 
-    @Override
-    public List<Mark> findAllMarksByStudent(Student student) {
-        return markRepository.findAllByStudent(student);
-    }
 
     @Override
     public List<Mark> findAllMarksByStudentAndSubject(Student student, Subject subject) {

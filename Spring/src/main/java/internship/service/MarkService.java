@@ -15,8 +15,6 @@ public interface MarkService {
 
     List<Mark> findAllMarks();
 
-    List<Mark> findAllMarksByStudent(Student student);
-
     List<Mark> findAllMarksByStudentAndSubject(Student student, Subject subject);
 
     Optional<Mark> findMarkById(Integer id);
