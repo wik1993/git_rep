@@ -2,6 +2,7 @@ package internship.service;
 
 import internship.model.Mark;
 import internship.model.Student;
+import internship.model.Subject;
 
 import java.util.List;
 import java.util.Optional;
@@ -15,6 +16,8 @@ public interface MarkService {
     List<Mark> findAllMarks();
 
     List<Mark> findAllMarksByStudent(Student student);
+
+    List<Mark> findAllMarksByStudentAndSubject(Student student, Subject subject);
 
     Optional<Mark> findMarkById(Integer id);
 

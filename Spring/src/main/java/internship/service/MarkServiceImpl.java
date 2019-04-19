@@ -2,6 +2,7 @@ package internship.service;
 
 import internship.model.Mark;
 import internship.model.Student;
+import internship.model.Subject;
 import internship.repository.MarkRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -39,6 +40,11 @@ public class MarkServiceImpl implements MarkService {
     @Override
     public List<Mark> findAllMarksByStudent(Student student) {
         return markRepository.findAllByStudent(student);
+    }
+
+    @Override
+    public List<Mark> findAllMarksByStudentAndSubject(Student student, Subject subject) {
+        return markRepository.findAllByStudentAndSubject(student, subject);
     }
 
     @Override

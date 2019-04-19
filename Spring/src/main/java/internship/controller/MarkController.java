@@ -2,16 +2,18 @@ package internship.controller;
 
 import internship.model.Mark;
 import internship.model.Student;
+import internship.model.Subject;
 import internship.service.MarkService;
 import internship.service.StudentService;
+import internship.service.SubjectService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Controller
 @RequestMapping(path = "/mark")
@@ -22,6 +24,9 @@ public class MarkController {
 
     @Autowired
     private StudentService studentService;
+
+    @Autowired
+    private SubjectService subjectService;
 
     @PostMapping(path = "/add")
     public @ResponseBody
@@ -80,24 +85,22 @@ public class MarkController {
         return ResponseEntity.ok(marks);
     }*/
 
-    @GetMapping(path = "/all/{id}")
+    @GetMapping(path = "/all/{studId}/{subId}")
     public @ResponseBody
-    ResponseEntity findAllMarksByCustomer(@PathVariable("id") Integer id) {
-        List<Mark> list;
+    ResponseEntity findAllMarksByCustomer(@PathVariable("studId") Integer studId, @PathVariable("subId") Integer subId) {
+        Double doub;
         Student student;
-        List <Integer> marks;
+        Subject subject;
         try{
-            student = studentService.findStudentById(id).orElse(null);
-            list = markService.findAllMarksByStudent(student);
-            marks = new ArrayList<>();
-            for (Mark mark: list) {
-                marks.add(mark.getValue());
-            }
+            student = studentService.findStudentById(studId).orElse(null);
+            subject = subjectService.findSubjectById(subId).orElse(null);
+            doub = markService.findAllMarksByStudentAndSubject(student, subject).stream().collect(Collectors.averagingInt(Mark::getValue));
+
         }catch (Exception e){
             e.printStackTrace();
             return ResponseEntity.notFound().build();
         }
-        return ResponseEntity.ok(marks);
+        return ResponseEntity.ok(doub);
     }
 
     @GetMapping(path = "/{id}")
