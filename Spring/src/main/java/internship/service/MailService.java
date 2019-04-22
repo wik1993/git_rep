@@ -10,8 +10,6 @@ import org.springframework.stereotype.Service;
 
 import javax.mail.MessagingException;
 import javax.mail.internet.MimeMessage;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.stream.Collectors;
 
 @Service
@@ -35,17 +33,42 @@ public class MailService {
     }
 
 
-    public void reportMarksToResponsible(Student student, Map<Subject, Double> map) {
+    public void weeklyMarksReportToResponsible() {
+        for (Student stud : studentService.findAllStudents()) {
+            StringBuilder stringBuilder = new StringBuilder();
+            stringBuilder.append(stud.getFirstName()).append("\'s results: ");
+            for (Subject sub : subjectService.findAllSubjects()) {
+                Double avg = markService.findAllMarksByStudentAndSubject(stud, sub).stream().collect(Collectors.averagingInt(Mark::getValue));
+                stringBuilder.append(sub);
+                stringBuilder.append("marks average: ").append(avg).append(". ");
+            }
+            sendWeeklyMarksReportToResponsible(stud, stringBuilder);
+        }
+    }
+
+    public void getSubjectsMarksMinThanAvg() {
+        for (Student stud : studentService.findAllStudents()) {
+            for (Subject sub : subjectService.findAllSubjects()) {
+                Double avg = markService.findAllMarksByStudentAndSubject(stud, sub).stream().collect(Collectors.averagingInt(Mark::getValue));
+                if (avg < 5.00){
+                    StringBuilder stringBuilder = new StringBuilder();
+                    stringBuilder.append(stud.getFirstName()).append("\'s results: ");
+                    stringBuilder.append(sub);
+                    stringBuilder.append("marks average: ").append(avg).append(". ");
+                    sendGetSubjectsMarksMinThanAvg(stud, stringBuilder);
+                }
+            }
+        }
+    }
+
+
+    public void sendWeeklyMarksReportToResponsible(Student student,StringBuilder stringBuilder) {
         MimeMessage message = sender.createMimeMessage();
         MimeMessageHelper helper = new MimeMessageHelper(message);
-        StringBuilder subjectAndAverageOfThis = new StringBuilder();
-        subjectAndAverageOfThis.append(student.toString());
-        map.forEach((k,v) -> subjectAndAverageOfThis.append(k.toString()).append(v.toString()));
-
         try {
             helper.setTo(student.getResponsibleEmail());
-            helper.setText(subjectAndAverageOfThis.toString());
-            helper.setSubject(student.getFirstName() + " Your child marks average per subject The average grade lower than minimum necessary");
+            helper.setText(stringBuilder.toString());
+            helper.setSubject(student.getFirstName() + "'s average mark per Subject");
         } catch (MessagingException e) {
             e.printStackTrace();
 
@@ -53,10 +76,9 @@ public class MailService {
         sender.send(message);
     }
 
-    public void report(Student student,StringBuilder stringBuilder){
+    public void sendGetSubjectsMarksMinThanAvg(Student student,StringBuilder stringBuilder){
         MimeMessage message = sender.createMimeMessage();
         MimeMessageHelper helper = new MimeMessageHelper(message);
-
         try {
             helper.setTo(student.getResponsibleEmail());
             helper.setText(stringBuilder.toString());
@@ -67,32 +89,5 @@ public class MailService {
         }
         sender.send(message);
     }
-
-    public void getSubjectsWithAvg() {
-
-        for (Student stud : studentService.findAllStudents()) {
-            Map<Subject, Double> subjectAndAverage = new HashMap<>();
-            for (Subject sub : subjectService.findAllSubjects()) {
-                Double avg = markService.findAllMarksByStudentAndSubject(stud, sub).stream().collect(Collectors.averagingInt(Mark::getValue));
-                subjectAndAverage.put(sub, avg);
-            }
-            reportMarksToResponsible(stud, subjectAndAverage);
-        }
-    }
-
-    public void getSubjectsMinThanAvg() {
-
-        for (Student stud : studentService.findAllStudents()) {
-            for (Subject sub : subjectService.findAllSubjects()) {
-                Double avg = markService.findAllMarksByStudentAndSubject(stud, sub).stream().collect(Collectors.averagingInt(Mark::getValue));
-                StringBuilder stringBuilder = new StringBuilder();
-                if (avg < 5.00){
-                    stringBuilder.append(stud.getFirstName()).append(sub).append(avg);
-                }
-                report(stud, stringBuilder);
-            }
-        }
-    }
-
 
 }

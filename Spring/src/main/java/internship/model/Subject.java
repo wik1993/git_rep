@@ -59,10 +59,9 @@ public class Subject {
 
     @Override
     public String toString() {
-        return "models.Subject{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", numberHour=" + numberHour +
-                '}';
+        return "subject" +
+                " name: " + name +
+                ", number of hours: " + numberHour +
+                ", ";
     }
 }

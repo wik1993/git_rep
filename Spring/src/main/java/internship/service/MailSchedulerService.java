@@ -23,10 +23,16 @@ public class MailSchedulerService {
     private static final Logger log = LoggerFactory.getLogger(MailSchedulerService.class);
     private static final SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss");
 
-    @Scheduled(fixedRate = 30000)
+   @Scheduled(fixedRate = 30000)
     public void report()  {
-        //service.getSubjectsWithAvg();
-        service.getSubjectsMinThanAvg();
+        service.getSubjectsMarksMinThanAvg();
+        log.info("The time is now {}", dateFormat.format(new Date()));
+        log.info("Email sent") ;
+    }
+
+    @Scheduled(cron = "0 0 9 1 * ?")
+    public void reportWeekly()  {
+        service.weeklyMarksReportToResponsible();
         log.info("The time is now {}", dateFormat.format(new Date()));
         log.info("Email sent") ;
     }
