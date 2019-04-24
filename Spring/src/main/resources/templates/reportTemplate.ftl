@@ -7,23 +7,21 @@
         <link rel="stylesheet" href="css/style.css" />
         </head>
     <body>
-        <h2>The Results</h2>
+        <h2>${studName}'s Results</h2>
 
-        <table>
+        <table border="1">
             <tr>
                 <th>Subject</th>
-                <th>Number of hours</th>
-                <th>Marks average</th>
+                <th>Marks</th>
             </tr>
-
-            <#list subjects as subject>
+            <#list subjectsAndMarks as subject, marks>
                 <tr>
-                    <td>${subject.name}</td>
-                    <td>${subject.numberOfHours}</td>
-                    <td>${subject.average}</td>
+                    <td align="center">${subject.name}</td>
+                    <#list marks as mark>
+                    <td align="center">${mark.value}</td>
+                    </#list>
                 </tr>
-            </#list>
-
+         </#list>
         </table>
     </body>
 </html>

@@ -59,7 +59,7 @@ public class Subject {
 
     @Override
     public String toString() {
-        return "subject" +
+        return "Subject" +
                 " name: " + name +
                 ", number of hours: " + numberHour +
                 ", ";
