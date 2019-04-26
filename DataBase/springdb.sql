@@ -1,5 +1,4 @@
 
-/*
  CREATE DATABASE springdb;
  use springdb;
 
@@ -57,7 +56,7 @@ INSERT INTO `professor` (`id`,`first_name`,`last_name`,`university_id`) VALUES (
 
 
 CREATE TABLE `subject` (
-  `id` int,
+   id int not null auto_increment,
   `name` varchar(255) default NULL,
   `number_hour` int,
 PRIMARY KEY (`id`)
@@ -252,4 +251,4 @@ INSERT INTO `prof_subject` (`id`,`professor_id`,`subject_id`) VALUES (30,21,4);
  alter table student add foreign key (subject_id) references subject(id);
  alter table mark add foreign key (subject_id) references subject(id);
  alter table mark add foreign key (student_id) references student(id);
-*/
+

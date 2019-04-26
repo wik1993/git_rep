@@ -70,7 +70,7 @@ public class MarkController {
     }
 
 
-/*    @GetMapping(path = "/avg")
+    @GetMapping(path = "/avg")
     public @ResponseBody
     ResponseEntity findAllMarksBySubject() {
         Double avg;
@@ -92,7 +92,7 @@ public class MarkController {
             return ResponseEntity.notFound().build();
         }
         return ResponseEntity.ok(studentSubjectMap);
-    }*/
+    }
 
     @GetMapping(path = "/{id}")
     public @ResponseBody

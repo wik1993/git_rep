@@ -4,25 +4,6 @@
         xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
     <changeSet author="Gligor Victor" id="9">
-        <sql dbms="h2, oracle"
-             endDelimiter="\nGO"
-             splitStatements="true"
-             stripComments="true">
-            INSERT INTO student (id,firstName,last_name,subject_id,responsible_email) VALUES (1,"Ryder","Burnett",1,"gligor.viktor@gmail.com");
-            INSERT INTO student (id,firstName,last_name,subject_id,responsible_email) VALUES (2,"Quinlan","Page",1,"gligor.viktor@gmail.com");
-            INSERT INTO student (id,firstName,last_name,subject_id,responsible_email) VALUES (3,"Hall","Gibbs",3,"gligor.viktor@gmail.com");
-            INSERT INTO student (id,firstName,last_name,subject_id,responsible_email) VALUES (4,"Lars","Frost",3,"gligor.viktor@gmail.com");
-            INSERT INTO student (id,firstName,last_name,subject_id,responsible_email) VALUES (5,"Baker","Rodriguez",2,"gligor.viktor@gmail.com");
-            INSERT INTO student (id,firstName,last_name,subject_id,responsible_email) VALUES (6,"Seth","Johnson",3,"gligor.viktor@gmail.com");
-            INSERT INTO student (id,firstName,last_name,subject_id,responsible_email) VALUES (7,"Hasad","Knox",4,"gligor.viktor@gmail.com");
-            INSERT INTO student (id,firstName,last_name,subject_id,responsible_email) VALUES (8,"Chandler","Vasquez",1,"gligor.viktor@gmail.com");
-            INSERT INTO student (id,firstName,last_name,subject_id,responsible_email) VALUES (9,"Yasir","George",4,"gligor.viktor@gmail.com");
-            INSERT INTO student (id,firstName,last_name,subject_id,responsible_email) VALUES (10,"Gray","Bowen",2,"gligor.viktor@gmail.com");
-            INSERT INTO student (id,firstName,last_name,subject_id,responsible_email) VALUES (11,"Omar","Fleming",3,"gligor.viktor@gmail.com");
-            INSERT INTO student (id,firstName,last_name,subject_id,responsible_email) VALUES (12,"Zeph","Maddox",2,"gligor.viktor@gmail.com");
-            INSERT INTO student (id,firstName,last_name,subject_id,responsible_email) VALUES (13,"Abdul","Frank",4,"gligor.viktor@gmail.com");
-            INSERT INTO student (id,firstName,last_name,subject_id,responsible_email) VALUES (14,"Peter","Lowery",3,"gligor.viktor@gmail.com");
-            <comment>Added new Students</comment>
-        </sql>
+
     </changeSet>
 </databaseChangeLog>

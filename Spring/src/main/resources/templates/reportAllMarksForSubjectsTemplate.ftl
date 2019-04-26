@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css" />
-        </head>
+    </head>
     <body>
         <h2>${studName}'s Results</h2>
 
@@ -18,10 +18,10 @@
                 <tr>
                     <td align="center">${subject.name}</td>
                     <#list marks as mark>
-                    <td align="center">${mark.value}</td>
-                    </#list>
+                     <td align="center">${mark.value}</td>
+                     </#list>
                 </tr>
-         </#list>
+            </#list>
         </table>
     </body>
 </html>

@@ -16,17 +16,19 @@ public class MailSchedulerService {
     private MailService service;
 
     @Autowired
-    public MailSchedulerService(MailService service){
+    public MailSchedulerService(MailService service) {
         this.service = service;
     }
 
     private static final Logger log = LoggerFactory.getLogger(MailSchedulerService.class);
     private static final SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss");
 
-   @Scheduled(fixedRate = 30000)
+    @Scheduled(fixedRate = 30000)
     public void report() throws Exception {
-       // service.getSubjectsMarksMinThanAvg();
-        service.weeklyMarksReportToResponsible();
+        //service.subjectsMarksMinThanAvg();
+        service.weeklyAvgMarksReportToResponsible();
+
+        //service.weeklyMarksReportToResponsible();
         log.info("The time is now {}", dateFormat.format(new Date()));
         log.info("Email sent");
     }
@@ -37,7 +39,6 @@ public class MailSchedulerService {
         log.info("The time is now {}", dateFormat.format(new Date()));
         log.info("Email sent") ;
     }*/
-
 
 
 }

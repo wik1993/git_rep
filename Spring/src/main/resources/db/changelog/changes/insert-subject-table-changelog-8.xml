@@ -4,15 +4,6 @@
         xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
     <changeSet author="Gligor Victor" id="8">
-        <sql dbms="h2, oracle"
-             endDelimiter="\nGO"
-             splitStatements="true"
-             stripComments="true">
-            INSERT INTO subject (id,name,number_hour) VALUES (1,"Programing Languages",60);
-            INSERT INTO subject (id,name,number_hour) VALUES (2,"Tech Support",38);
-            INSERT INTO subject (id,name,number_hour) VALUES (3,"Customer Service",50);
-            INSERT INTO subject (id,name,number_hour) VALUES (4,"Help Desk",55);
-            <comment>Added new Subjects</comment>
-        </sql>
+
     </changeSet>
 </databaseChangeLog>

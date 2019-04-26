@@ -4,13 +4,6 @@
         xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
     <changeSet author="Gligor Victor" id="7">
-        <sql dbms="h2, oracle"
-             endDelimiter="\nGO"
-             splitStatements="true"
-             stripComments="true">
-            INSERT INTO university (id, name, short_name) VALUES (1, "Academia de Studii Economice", "ASEM");
-            INSERT INTO university (id, name, short_name) VALUES (2, "Universitatea tehnica a Moldovei", "USM");
-            <comment>Added new Universities</comment>
-        </sql>
+
     </changeSet>
 </databaseChangeLog>

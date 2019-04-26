@@ -66,12 +66,12 @@ public class MailService {
         model.put("studName", student.getFirstName());
         model.put("subjectsAndMarks", subAndMarks);
         configuration.setClassForTemplateLoading(this.getClass(), "/templates/");
-        Template t = configuration.getTemplate("reportTemplate.ftl");
+        Template t = configuration.getTemplate("reportAllMarksForSubjectsTemplate.ftl");
         String text = FreeMarkerTemplateUtils.processTemplateIntoString(t, model);
         try {
             helper.setTo(student.getResponsibleEmail());
             helper.setText(text, true);
-            helper.setSubject(student.getFirstName() + "\'s average grade lower than minimum necessary");
+            helper.setSubject(student.getFirstName() + "\'s weekly marks report");
         } catch (MessagingException e) {
             e.printStackTrace();
 
@@ -79,7 +79,7 @@ public class MailService {
         sender.send(message);
     }
 
- /*     protected void getSubjectsMarksMinThanAvg() throws Exception {
+      protected void subjectsMarksMinThanAvg() throws Exception {
         for (Student stud : studentService.findAllStudents()) {
             Map<Subject, Double> subAndAvg = new HashMap<>();
             for (Subject sub : subjectService.findAllSubjects()) {
@@ -101,7 +101,7 @@ public class MailService {
         model.put("studName", student.getFirstName());
         model.put("subjectsAndAvg", subAndAvg);
         configuration.setClassForTemplateLoading(this.getClass(), "/templates/");
-        Template t = configuration.getTemplate("reportTemplate.ftl");
+        Template t = configuration.getTemplate("reportMinThanAvgTemplate.ftl");
         String text = FreeMarkerTemplateUtils.processTemplateIntoString(t, model);
         try {
             helper.setTo(student.getResponsibleEmail());
@@ -122,7 +122,7 @@ public class MailService {
                 Double avg = markService.findAllMarksByStudentAndSubject(stud, sub).stream().collect(Collectors.averagingInt(Mark::getValue));
                 subAndAvg.put(sub, avg);
             }
-            sendWeeklyMarksReportToResponsible(stud, subAndAvg);
+            sendWeeklyAvgMarksReportToResponsible(stud, subAndAvg);
         }
     }
 
@@ -134,7 +134,7 @@ public class MailService {
         model.put("studName", student.getFirstName());
         model.put("subjectsAndAvg", subAndAvg);
         configuration.setClassForTemplateLoading(this.getClass(), "/templates/");
-        Template t = configuration.getTemplate("reportTemplate.ftl");
+        Template t = configuration.getTemplate("reportMinThanAvgTemplate.ftl");
         String text = FreeMarkerTemplateUtils.processTemplateIntoString(t, model);
         try {
             helper.setTo(student.getResponsibleEmail());
@@ -147,7 +147,7 @@ public class MailService {
         sender.send(message);
     }
 
-*/
+
 
 
     /** Sending email using String Builder**/

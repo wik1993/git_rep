@@ -6,22 +6,5 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
          http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
 
-    <include file="/db/changelog/changes/create-university-table-changelog-1.xml"/>
-    <include file="/db/changelog/changes/create-subject-table-changelog-2.xml"/>
-    <include file="/db/changelog/changes/create-student-table-changelog-3.xml"/>
-    <include file="/db/changelog/changes/create-professor-table-changelog-4.xml"/>
-    <include file="/db/changelog/changes/create-prof_subject-table-changelog-5.xml"/>
-    <include file="/db/changelog/changes/create-mark-table-changelog-6.xml"/>
-    <include file="/db/changelog/changes/insert-university-table-changelog-7.xml"/>
-    <include file="/db/changelog/changes/insert-subject-table-changelog-8.xml"/>
-    <include file="/db/changelog/changes/insert-student-table-changelog-9.xml"/>
-    <include file="/db/changelog/changes/insert-professor-table-changelog-10.xml"/>
-    <include file="/db/changelog/changes/insert-prof_subject-table-changelog-11.xml"/>
-    <include file="/db/changelog/changes/insert-mark-table-changelog-12.xml"/>
-    <include file="/db/changelog/changes/setForeignKey-professor-to-university-table-changelog-13.xml"/>
-    <include file="/db/changelog/changes/setForeignKey-prof_subject-to-professor-table-changelog-14.xml"/>
-    <include file="/db/changelog/changes/setForeignKey-prof_subject-to-subject-table-changelog-15.xml"/>
-    <include file="/db/changelog/changes/setForeignKey-student-to-subject-table-changelog-16.xml"/>
-    <include file="/db/changelog/changes/setForeignKey-mark-to-subject-table-changelog-17.xml"/>
-    <include file="/db/changelog/changes/setForeignKey-mark-to-student-table-changelog-18.xml"/>
+   <include file="/db/changelog/changes/changelog-1.0.xml"/>
 </databaseChangeLog>
