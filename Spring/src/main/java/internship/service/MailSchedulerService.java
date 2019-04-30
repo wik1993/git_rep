@@ -26,9 +26,9 @@ public class MailSchedulerService {
     @Scheduled(fixedRate = 30000)
     public void report() throws Exception {
         //service.subjectsMarksMinThanAvg();
-        service.weeklyAvgMarksReportToResponsible();
+        //service.weeklyAvgMarksReportToResponsible();
 
-        //service.weeklyMarksReportToResponsible();
+        service.weeklyMarksReportToResponsible();
         log.info("The time is now {}", dateFormat.format(new Date()));
         log.info("Email sent");
     }

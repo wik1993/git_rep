@@ -13,8 +13,6 @@ import org.springframework.ui.freemarker.FreeMarkerTemplateUtils;
 
 import javax.mail.MessagingException;
 import javax.mail.internet.MimeMessage;
-import java.io.IOException;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -139,7 +137,7 @@ public class MailService {
         try {
             helper.setTo(student.getResponsibleEmail());
             helper.setText(text, true);
-            helper.setSubject(student.getFirstName() + "\'s average grade lower than minimum necessary");
+            helper.setSubject(student.getFirstName() + "\'s weekly marks average report");
         } catch (MessagingException e) {
             e.printStackTrace();
 
