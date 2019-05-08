@@ -45,15 +45,19 @@ public class MailService {
      * Sending email using HTML Freemarker template
      **/
 
-    public void weeklyMarksReportToResponsible() throws Exception {
-        for (Student stud : studentService.findAllStudents()) {
+    public void weeklyMarksReportToResponsible() {
+        studentService.findAllStudents().forEach(student -> {
             Map<Subject, List> subAndMarks = new HashMap<>();
-            for (Subject sub : subjectService.findAllSubjects()) {
-                List<Mark> marks = markService.findAllMarksByStudentAndSubject(stud, sub);
-                subAndMarks.put(sub, marks);
+            subjectService.findAllSubjects().forEach(subject -> {
+                List<Mark> marks = markService.findAllMarksByStudentAndSubject(student, subject);
+                subAndMarks.put(subject, marks);
+            });
+            try {
+                sendWeeklyMarksReportToResponsible(student, subAndMarks);
+            } catch (Exception e) {
+                e.printStackTrace();
             }
-            sendWeeklyMarksReportToResponsible(stud, subAndMarks);
-        }
+        });
     }
 
 
@@ -77,18 +81,23 @@ public class MailService {
         sender.send(message);
     }
 
-      protected void subjectsMarksMinThanAvg() throws Exception {
-        for (Student stud : studentService.findAllStudents()) {
+    public void subjectsMarksMinThanAvg() {
+        studentService.findAllStudents().forEach(student -> {
             Map<Subject, Double> subAndAvg = new HashMap<>();
-            for (Subject sub : subjectService.findAllSubjects()) {
-                Double avg = markService.findAllMarksByStudentAndSubject(stud, sub).stream().collect(Collectors.averagingInt(Mark::getValue));
+            subjectService.findAllSubjects().forEach(subject -> {
+                Double avg = markService.findAllMarksByStudentAndSubject(student, subject).stream().collect(Collectors.averagingInt(Mark::getValue));
                 if (avg < 5.00) {
-                    subAndAvg.put(sub, avg);
+                    subAndAvg.put(subject, avg);
+                }
+            });
+            if (subAndAvg.size() != 0) {
+                try {
+                    sendGetSubjectsMarksMinThanAvg(student, subAndAvg);
+                } catch (Exception e) {
+                    e.printStackTrace();
                 }
             }
-            if(subAndAvg.size() != 0){
-            sendGetSubjectsMarksMinThanAvg(stud,subAndAvg);}
-        }
+        });
     }
 
 
@@ -113,19 +122,23 @@ public class MailService {
     }
 
 
-    public void weeklyAvgMarksReportToResponsible() throws Exception {
-        for (Student stud : studentService.findAllStudents()) {
+    public void weeklyAvgMarksReportToResponsible() {
+        studentService.findAllStudents().forEach(student -> {
             Map<Subject, Double> subAndAvg = new HashMap<>();
-            for (Subject sub : subjectService.findAllSubjects()) {
-                Double avg = markService.findAllMarksByStudentAndSubject(stud, sub).stream().collect(Collectors.averagingInt(Mark::getValue));
-                subAndAvg.put(sub, avg);
+            subjectService.findAllSubjects().forEach(subject -> {
+                Double avg = markService.findAllMarksByStudentAndSubject(student, subject).stream().collect(Collectors.averagingInt(Mark::getValue));
+                subAndAvg.put(subject, avg);
+            });
+            try {
+                sendWeeklyAvgMarksReportToResponsible(student, subAndAvg);
+            } catch (Exception e) {
+                e.printStackTrace();
             }
-            sendWeeklyAvgMarksReportToResponsible(stud, subAndAvg);
-        }
+        });
     }
 
 
-    private void sendWeeklyAvgMarksReportToResponsible(Student student, Map<Subject, Double> subAndAvg ) throws Exception {
+    private void sendWeeklyAvgMarksReportToResponsible(Student student, Map<Subject, Double> subAndAvg) throws Exception {
         MimeMessage message = sender.createMimeMessage();
         MimeMessageHelper helper = new MimeMessageHelper(message);
         Map<String, Object> model = new HashMap<>();
@@ -144,8 +157,6 @@ public class MailService {
         }
         sender.send(message);
     }
-
-
 
 
     /** Sending email using String Builder**/
