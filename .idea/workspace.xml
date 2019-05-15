@@ -1,44 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc19b982-a62f-49b5-ab3c-fd02b28d185b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spring/src/main/java/internship/controller/ProfessorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring/src/main/java/internship/controller/ProfessorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spring/src/main/java/internship/model/Mark.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring/src/main/java/internship/model/Mark.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spring/target/classes/internship/controller/ProfessorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Spring/target/classes/internship/controller/ProfessorController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringWithSwing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringWithSwing/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringWithSwing/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringWithSwing/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringWithSwing/src/main/java/controller/ManageMarks.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringWithSwing/src/main/java/controller/ManageMarks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringWithSwing/src/main/java/controller/ManageProfessors.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringWithSwing/src/main/java/controller/ManageProfessors.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringWithSwing/src/main/java/controller/ManageStudents.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringWithSwing/src/main/java/controller/ManageStudents.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringWithSwing/src/main/java/controller/ManageSubjects.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringWithSwing/src/main/java/controller/ManageSubjects.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringWithSwing/src/main/java/controller/ManageUniversities.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringWithSwing/src/main/java/controller/ManageUniversities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringWithSwing/src/main/java/service/MarkService.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringWithSwing/src/main/java/service/MarkService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringWithSwing/src/main/java/service/ProfessorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringWithSwing/src/main/java/service/ProfessorService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringWithSwing/src/main/java/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringWithSwing/src/main/java/service/StudentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringWithSwing/src/main/java/service/SubjectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringWithSwing/src/main/java/service/SubjectService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringWithSwing/src/main/java/service/UniversityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringWithSwing/src/main/java/service/UniversityService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringWithSwing/target/classes/Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringWithSwing/target/classes/Main$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringWithSwing/target/classes/Main$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringWithSwing/target/classes/Main$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringWithSwing/target/classes/Main$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringWithSwing/target/classes/Main$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringWithSwing/target/classes/Main$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringWithSwing/target/classes/Main$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringWithSwing/target/classes/Main$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringWithSwing/target/classes/Main$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringWithSwing/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringWithSwing/target/classes/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringWithSwing/target/classes/controller/ManageMarks$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringWithSwing/target/classes/controller/ManageMarks$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringWithSwing/target/classes/controller/ManageMarks.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringWithSwing/target/classes/controller/ManageMarks.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringWithSwing/target/classes/controller/ManageProfessors$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringWithSwing/target/classes/controller/ManageProfessors$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringWithSwing/target/classes/controller/ManageProfessors.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringWithSwing/target/classes/controller/ManageProfessors.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringWithSwing/target/classes/controller/ManageStudents.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringWithSwing/target/classes/controller/ManageStudents.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringWithSwing/target/classes/controller/ManageSubjects$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringWithSwing/target/classes/controller/ManageSubjects$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringWithSwing/target/classes/controller/ManageSubjects$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringWithSwing/target/classes/controller/ManageSubjects$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringWithSwing/target/classes/controller/ManageSubjects.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringWithSwing/target/classes/controller/ManageSubjects.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringWithSwing/target/classes/controller/ManageUniversities$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringWithSwing/target/classes/controller/ManageUniversities$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringWithSwing/target/classes/controller/ManageUniversities$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringWithSwing/target/classes/controller/ManageUniversities$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringWithSwing/target/classes/controller/ManageUniversities$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringWithSwing/target/classes/controller/ManageUniversities$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringWithSwing/target/classes/controller/ManageUniversities.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringWithSwing/target/classes/controller/ManageUniversities.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringWithSwing/target/classes/service/MarkService$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringWithSwing/target/classes/service/MarkService$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringWithSwing/target/classes/service/MarkService.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringWithSwing/target/classes/service/MarkService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringWithSwing/target/classes/service/ProfessorService.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringWithSwing/target/classes/service/ProfessorService.class" afterDir="false" />
+    <list default="true" id="81aafd53-b9eb-443e-af41-b5c5c53fb5dc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -49,42 +18,29 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1928" />
-    <option name="y" value="-312" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="-1493" />
+    <option name="y" value="-321" />
+    <option name="width" value="1377" />
+    <option name="height" value="739" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -103,11 +59,11 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="dc19b982-a62f-49b5-ab3c-fd02b28d185b" name="Default Changelist" comment="" />
-      <created>1554462317009</created>
+      <changelist id="81aafd53-b9eb-443e-af41-b5c5c53fb5dc" name="Default Changelist" comment="" />
+      <created>1557926493312</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1554462317009</updated>
+      <updated>1557926493312</updated>
     </task>
     <servers />
   </component>
@@ -119,7 +75,7 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17590618" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" />
@@ -152,80 +108,9 @@
   </component>
   <component name="masterDetails">
     <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>git_rep</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
           <splitter-proportions>
             <option name="proportions">
               <list>
