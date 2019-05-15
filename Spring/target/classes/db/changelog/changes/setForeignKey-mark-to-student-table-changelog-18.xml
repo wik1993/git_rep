@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<changeSet author="Gligor Victor" id="18">
+    <addForeignKeyConstraint baseColumnNames="student_id"
+                             baseTableName="mark"
+                             constraintName="fk_student_id"
+                             onDelete="CASCADE"
+                             referencedColumnNames="id"
+                             referencedTableName="student"/>
+</changeSet>
