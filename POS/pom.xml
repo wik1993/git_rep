@@ -26,6 +26,12 @@
             <artifactId>reflections</artifactId>
             <version>0.9.11</version>
         </dependency>
-    </dependencies>>
+
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>5.4.1.Final</version>
+        </dependency>
+    </dependencies>
 
 </project>

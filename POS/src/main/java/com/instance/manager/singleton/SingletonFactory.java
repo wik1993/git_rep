@@ -1,4 +1,4 @@
-package com.intance.manager.singleton;
+package com.instance.manager.singleton;
 
 import com.application.TestClass1;
 import com.application.TestClass2;
@@ -30,7 +30,6 @@ public class SingletonFactory {
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
-
     }
 
     @SuppressWarnings("unchecked")

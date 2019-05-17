@@ -1,20 +1,18 @@
-package com.intance.manager.prototype;
+package com.instance.manager.prototype;
 
 import com.application.TestClass1;
+import com.application.TestClass2;
 
 public class PrototypeFactory {
 
-    private TestClass1 testClass1;
-
     @SuppressWarnings("unchecked")
     public <T> T createInstance(String instanceName) {
-        try {
-            if ("blabla1".equals(instanceName)) {
-                testClass1 = new TestClass1();
-            }
-            return (T) testClass1;
-        } catch (Exception e) {
-            throw new RuntimeException(e);
+        if ("balbla1".equals(instanceName)) {
+            return (T) new TestClass1();
+        } else if ("blabla2".equals(instanceName)) {
+            return (T) new TestClass2();
+        } else {
+            throw new RuntimeException("no such instance declared");
         }
     }
 

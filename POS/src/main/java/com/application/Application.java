@@ -1,24 +1,20 @@
 package com.application;
 
-import com.intance.manager.InstanceFactory;
-import com.intance.manager.list.ListOfInstancesImpl;
-import com.service.email.EmailService;
-import com.service.email.impl.EmailServiceImpl;
-
-
-import java.util.List;
+import com.instance.manager.jpa.JPAServiceFactory;
+import com.jpa.domain.Item;
+import com.jpa.service.JPAService;
+import com.jpa.service.impl.ItemJPAServiceImpl;
 
 public class Application {
 
     public static void main(String[] args) {
 
-        EmailService emailService = InstanceFactory.getSingleton(EmailServiceImpl.class);
-        emailService.sendEmail("");
 
-        ListOfInstancesImpl test = new ListOfInstancesImpl();
-        List list = test.createInstances(EmailService.class);
-        System.out.println(list.size());
-        list.forEach(System.out::println);
+        JPAServiceFactory jpaFactory = new JPAServiceFactory();
+        ItemJPAServiceImpl itemJPAService = (ItemJPAServiceImpl) jpaFactory.getJPASingleton(Item.class);
+        itemJPAService.create(new Item());
+
+
     }
 
 }
