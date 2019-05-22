@@ -2,70 +2,45 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff9a129a-a633-499e-a46f-4fd06768fcd2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Spring/src/main/java/internship/service/MailSchedulerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Spring/src/main/java/internship/service/MailService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mail/Human.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CustomerOrderProject/target/classes/internship/Run.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CustomerOrderProject/target/classes/internship/controller/CustomerController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CustomerOrderProject/target/classes/internship/controller/OrderController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CustomerOrderProject/target/classes/internship/dto/CustomerOrderDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CustomerOrderProject/target/classes/internship/model/Customer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CustomerOrderProject/target/classes/internship/model/Order.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CustomerOrderProject/target/classes/internship/repository/CustomerRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CustomerOrderProject/target/classes/internship/repository/OrderRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CustomerOrderProject/target/classes/internship/service/CustomerOrderDTOServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CustomerOrderProject/target/classes/internship/service/CustomerOrdersDTOService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CustomerOrderProject/target/classes/internship/service/CustomerService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CustomerOrderProject/target/classes/internship/service/CustomerServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CustomerOrderProject/target/classes/internship/service/OrderService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CustomerOrderProject/target/classes/internship/service/OrderServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/Spring.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/Spring.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/src/main/java/internship/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/src/main/java/internship/Run.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/src/main/java/internship/controller/MarkController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/src/main/java/internship/controller/MarkController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/src/main/java/internship/controller/ProfessorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/src/main/java/internship/controller/ProfessorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/src/main/java/internship/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/src/main/java/internship/controller/StudentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/src/main/java/internship/controller/SubjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/src/main/java/internship/controller/SubjectController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/src/main/java/internship/controller/UniversityContoller.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/src/main/java/internship/controller/UniversityContoller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/src/main/java/internship/repository/MarkRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/src/main/java/internship/repository/MarkRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/src/main/java/internship/repository/ProfessorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/src/main/java/internship/repository/ProfessorRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/src/main/java/internship/repository/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/src/main/java/internship/repository/StudentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/src/main/java/internship/repository/SubjectRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/src/main/java/internship/repository/SubjectRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/src/main/java/internship/repository/UniversityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/src/main/java/internship/repository/UniversityRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/src/main/java/internship/service/MarkService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/src/main/java/internship/service/MarkService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/src/main/java/internship/service/MarkServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/src/main/java/internship/service/MarkServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/src/main/java/internship/service/ProfessorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/src/main/java/internship/service/ProfessorService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/src/main/java/internship/service/ProfessorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/src/main/java/internship/service/ProfessorServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/src/main/java/internship/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/src/main/java/internship/service/StudentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/src/main/java/internship/service/StudentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/src/main/java/internship/service/StudentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/src/main/java/internship/service/SubjectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/src/main/java/internship/service/SubjectService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/src/main/java/internship/service/SubjectServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/src/main/java/internship/service/SubjectServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/src/main/java/internship/service/UniversityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/src/main/java/internship/service/UniversityService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/src/main/java/internship/service/UniversityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/src/main/java/internship/service/UniversityServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/target/classes/internship/Run.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/target/classes/internship/Run.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/target/classes/internship/controller/MarkController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/target/classes/internship/controller/MarkController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/target/classes/internship/controller/ProfessorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/target/classes/internship/controller/ProfessorController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/target/classes/internship/controller/StudentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/target/classes/internship/controller/StudentController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/target/classes/internship/controller/SubjectController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/target/classes/internship/controller/SubjectController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/target/classes/internship/controller/UniversityContoller.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/target/classes/internship/controller/UniversityContoller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/target/classes/internship/repository/MarkRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/target/classes/internship/repository/MarkRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/target/classes/internship/repository/ProfessorRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/target/classes/internship/repository/ProfessorRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/target/classes/internship/repository/StudentRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/target/classes/internship/repository/StudentRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/target/classes/internship/repository/SubjectRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/target/classes/internship/repository/SubjectRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/target/classes/internship/repository/UniversityRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/target/classes/internship/repository/UniversityRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/target/classes/internship/service/MarkService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/target/classes/internship/service/MarkService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/target/classes/internship/service/MarkServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/target/classes/internship/service/MarkServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/target/classes/internship/service/ProfessorService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/target/classes/internship/service/ProfessorService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/target/classes/internship/service/ProfessorServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/target/classes/internship/service/ProfessorServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/target/classes/internship/service/StudentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/target/classes/internship/service/StudentService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/target/classes/internship/service/StudentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/target/classes/internship/service/StudentServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/target/classes/internship/service/SubjectService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/target/classes/internship/service/SubjectService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/target/classes/internship/service/SubjectServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/target/classes/internship/service/SubjectServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/target/classes/internship/service/UniversityService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/target/classes/internship/service/UniversityService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring/target/classes/internship/service/UniversityServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/target/classes/internship/service/UniversityServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mail/SimpleMailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mail/SimpleMailController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BuilderPattern/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BuilderPattern/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BuilderPattern/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BuilderPattern/src/main/java/com/builderPatTrain/BuilderPatterDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BuilderPattern/src/main/java/com/builderPatTrain/MealBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BuilderPattern/src/main/java/com/builderPatTrain/items/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BuilderPattern/src/main/java/com/builderPatTrain/items/burger/Burger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BuilderPattern/src/main/java/com/builderPatTrain/items/burger/ChickenBurger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BuilderPattern/src/main/java/com/builderPatTrain/items/burger/VegBurger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BuilderPattern/src/main/java/com/builderPatTrain/items/drink/Coke.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BuilderPattern/src/main/java/com/builderPatTrain/items/drink/ColdDrink.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BuilderPattern/src/main/java/com/builderPatTrain/items/drink/Pepsi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BuilderPattern/src/main/java/com/builderPatTrain/meal/Meal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BuilderPattern/src/main/java/com/builderPatTrain/packing/Bottle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BuilderPattern/src/main/java/com/builderPatTrain/packing/Packing.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BuilderPattern/src/main/java/com/builderPatTrain/packing/Wrapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BuilderPattern/src/main/java/com/decoratorPattern/DecoratorPatternDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BuilderPattern/src/main/java/com/decoratorPattern/RedShapeDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BuilderPattern/src/main/java/com/decoratorPattern/Shape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BuilderPattern/src/main/java/com/decoratorPattern/ShapeDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BuilderPattern/src/main/java/com/decoratorPattern/shapes/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BuilderPattern/src/main/java/com/decoratorPattern/shapes/Rectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../POSAplication/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../POSAplication/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../POSAplication/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../POSAplication/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../POSAplication/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../POSAplication/POSAplication.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../POSAplication/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../POSAplication/src/main/java/com/application/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../POSAplication/src/main/java/com/instances/manager/CommonInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../POSAplication/src/main/java/com/instances/manager/InstanceFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../POSAplication/src/main/java/com/instances/manager/singleton/SingletonFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../POSAplication/src/main/java/com/instances/manager/singleton/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NewHibernateMaven/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../NewHibernateMaven/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NewHibernateMaven/src/main/com.hibernatePractice/service/DBService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../NewHibernateMaven/src/main/com.hibernatePractice/service/DBService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NewHibernateMaven/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../NewHibernateMaven/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POS/src/main/java/com/application/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/../POS/src/main/java/com/application/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practice/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../practice/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -86,20 +61,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="9" selection-end-column="50" />
+            <state relative-caret-position="153">
+              <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/mail/SimpleMailController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="22" column="32" lean-forward="true" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+            <state relative-caret-position="308">
+              <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -119,7 +94,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/mail/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
+            <state relative-caret-position="102">
               <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -172,6 +147,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -196,33 +172,24 @@
               <item name="WorkingEmailSender" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WorkingEmailSender" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WorkingEmailSender" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mail" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WorkingEmailSender" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WorkingEmailSender" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WorkingEmailSender" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WorkingEmailSender" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555490014390" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CustomerOrderProject" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -303,7 +270,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18381241" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18683812" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -377,13 +344,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="New Project. Email sender. Added logs" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/mail/Human.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -391,16 +351,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/java/mail/Human.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="9" selection-end-column="50" />
+        <state relative-caret-position="391">
+          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/mail/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
+        <state relative-caret-position="102">
           <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -410,11 +370,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/mail/SimpleMailController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="22" column="32" lean-forward="true" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+        <state relative-caret-position="308">
+          <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
         </state>
       </provider>
     </entry>

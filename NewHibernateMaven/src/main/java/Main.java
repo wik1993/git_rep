@@ -31,8 +31,7 @@ public class Main {
     /* Method to SAVE in the database */
     public void save(Object obj) {
         Session session = factory.openSession();
-        Transaction tx;
-        tx = session.beginTransaction();
+        Transaction tx = session.beginTransaction();
         session.save(obj);
         tx.commit();
         session.close();
@@ -50,8 +49,7 @@ public class Main {
 
     public void update(Object object) {
         Session session = factory.openSession();
-        Transaction tx = null;
-        tx = session.beginTransaction();
+        Transaction tx = session.beginTransaction();
         session.update(object);
         tx.commit();
         session.close();
@@ -60,8 +58,7 @@ public class Main {
 
     public void delete(Integer id, Class<?> objectType) {
         Session session = factory.openSession();
-        Transaction tx = null;
-        tx = session.beginTransaction();
+        Transaction tx = session.beginTransaction();
         Object object = session.get(objectType, id);
         session.delete(object);
         tx.commit();

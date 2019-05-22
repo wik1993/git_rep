@@ -7,31 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32825cd1-a107-48ed-a41c-eb852f8135b5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../IdeaProjects/HibernateMaven/.idea/HibernateMaven.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../IdeaProjects/HibernateMaven/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POS/src/main/java/com/builder/Builder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POS/src/main/java/com/builder/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POS/src/main/java/com/instance/manager/builder/BuilderFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POS/src/main/java/com/instance/manager/jpa/JPAServiceFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POS/src/main/java/com/jpa/domain/Event.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POS/src/main/java/com/jpa/domain/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POS/src/main/java/com/jpa/domain/Operator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POS/src/main/java/com/jpa/domain/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POS/src/main/java/com/jpa/service/JPAService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POS/src/main/java/com/jpa/service/impl/EventJPAServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POS/src/main/java/com/jpa/service/impl/ItemJPAServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POS/src/main/java/com/jpa/service/impl/OperatorJPAServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POS/src/main/java/com/jpa/service/impl/OrderJPAServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NewHibernateMaven/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../NewHibernateMaven/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../POS/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../POS/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../POS/src/main/java/com/application/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/../POS/src/main/java/com/application/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../POS/src/main/java/com/intance/manager/InstanceFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../POS/src/main/java/com/instance/manager/InstanceFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../POS/src/main/java/com/intance/manager/list/ListOfInstances.java" beforeDir="false" afterPath="$PROJECT_DIR$/../POS/src/main/java/com/instance/manager/list/InstancesListFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../POS/src/main/java/com/intance/manager/list/ListOfInstancesImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../POS/src/main/java/com/instance/manager/list/InstancesListFactoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../POS/src/main/java/com/intance/manager/prototype/PrototypeFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../POS/src/main/java/com/instance/manager/prototype/PrototypeFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../POS/src/main/java/com/intance/manager/singleton/SingletonFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../POS/src/main/java/com/instance/manager/singleton/SingletonFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice.iml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -46,8 +22,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/service/DBService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-15">
-              <caret line="16" column="32" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+            <state relative-caret-position="93">
+              <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -58,8 +34,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/service/MarkService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="53" column="18" lean-forward="true" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
+            <state relative-caret-position="714">
+              <caret line="53" column="18" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#369#370#0" expanded="true" />
@@ -221,8 +197,8 @@
     <option name="skipTests" value="true" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="-1512" />
+    <option name="y" value="-325" />
     <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
@@ -232,9 +208,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -340,10 +316,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="-1928" y="-312" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25113463" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17963752" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -576,6 +551,28 @@ studentService.</expression-string>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/DBService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/MarkService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="53" column="18" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#369#370#0" expanded="true" />
+            <element signature="e#403#404#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/service/StudentService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -639,28 +636,6 @@ studentService.</expression-string>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="29" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/MarkService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="53" column="18" lean-forward="true" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#369#370#0" expanded="true" />
-            <element signature="e#403#404#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/DBService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-15">
-          <caret line="16" column="32" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

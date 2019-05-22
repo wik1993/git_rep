@@ -2,7 +2,6 @@ package com.application;
 
 import com.instance.manager.jpa.JPAServiceFactory;
 import com.jpa.domain.Item;
-import com.jpa.service.JPAService;
 import com.jpa.service.impl.ItemJPAServiceImpl;
 
 public class Application {
